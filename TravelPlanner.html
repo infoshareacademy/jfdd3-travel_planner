@@ -3,21 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Travel Planner</title>
-    <link rel="stylesheet" href="TravelPlanner.css">
+    <link rel="stylesheet" href="styles/TravelPlanner.css">
 
 </head>
 <body>
 
     <header>LOGO</header>
 
-        <img src="gdansk-logo.png">
 
 
 
 
 
 
-    <main>ZDJĘCIE</main>
+
+    <main>
+        <div class="cl1">
+        <img width=50% height=50% src="images/gdansk-logo.png">
+        </div>
+        <div class="cl1">
+        <p>Do końca pierwszego sprintu pozostało dni:&nbsp;</p><img id="id1" width="162" height="232" alt="numer" src="">
+        </div>
+    </main>
 
 
 
@@ -30,6 +37,11 @@
 
 
 
-
+    <script>
+        var data = new Date();
+        var data2 = new Date(2016, 4, 20, 17);
+        var roznica = (data2 - data)/ 86400000;
+        document.getElementById("id1").src="images/"+Math.round(roznica)+".png";
+    </script>
 </body>
 </html>
