@@ -43,10 +43,10 @@ footer {
     position: relative;
     width: 100%;
     min-height: 400px;
-    background-image: url(../images/maptest5.png);
+    /*background-image: url(../images/maptest5.png);
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: ;
+    border-radius: ;*/
 }
 .zegar {
     position: absolute;
