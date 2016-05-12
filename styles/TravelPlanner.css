@@ -42,12 +42,16 @@ footer {
     position: relative;
     width: 90%;
     min-height: 400px;
-    background-color: darkturquoise;
+    background-image: url(../images/maptest5.png);
+    background-repeat: no-repeat;
 }
 .zegar {
     position: absolute;
     bottom: 0px;
-    background-color: yellow;
+    background-color: rgba(255,255,255,0.5);
     min-width: 300px;
     min-height: 100px;
+}
+.foot {
+    height: 90px;
 }
