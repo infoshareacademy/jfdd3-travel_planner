@@ -16,6 +16,7 @@ main {
     font-weight: bold;
     font-stretch: expanded;
 
+
 }
 
 footer {
@@ -40,14 +41,17 @@ footer {
 }
 .cl2 {
     position: relative;
-    width: 90%;
+    width: 100%;
     min-height: 400px;
     background-image: url(../images/maptest5.png);
     background-repeat: no-repeat;
+    background-position: center;
+    border-radius: ;
 }
 .zegar {
     position: absolute;
     bottom: 0px;
+    right: 0px;
     background-color: rgba(255,255,255,0.5);
     min-width: 300px;
     min-height: 100px;
