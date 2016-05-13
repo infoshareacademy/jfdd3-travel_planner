@@ -66,7 +66,7 @@ footer {
 }
 .brama-wyz {
     position: absolute;
-    top:0%;
+    top: 0;
     left:29%;
     width:7%;
     max-height: 30%;
@@ -138,7 +138,7 @@ footer {
 }
 header > .zegar {
     position: absolute;
-    right: 0px;
+    right: 0;
 }
 header .bigbox {
     display: inline-block;
@@ -191,7 +191,7 @@ header .box2 {
     text-shadow: 3px 3px 5px #8e8e8e;
 }
 span.lista1 {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 25px;
     color: #ff3e3e;
     transition: font-size 3s;
