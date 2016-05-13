@@ -95,30 +95,41 @@ footer {
     box-shadow: 5px 5px 13px -6px;
 }
 
-.foot {
-    height: 150px;
-    margin-left: 450px;
-    margin-right: 400px;
+
+.subscribe-newsletter {
+    height: 110px;
+    width: 299px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: url('../images/newsletter.png');
     background-repeat: no-repeat;
     margin-top: 50px;
     margin-bottom: 50px;
-
-
 }
 
-p {
-    font-size: 15px;
+.subscribe-newsletter p {
     font-weight: lighter;
-    font-family: "Century Schoolbook L";
+    font-family: "Century Schoolbook L", serif;
     font-style: italic;
     font-stretch: expanded;
-    /*margin-left: 100px;*/
-    /*margin-right: 500px;*/
     margin-top: 15px;
-    text-shadow: 0px 0px 10px black;
-    text-align: left;
+    text-shadow: 0 0 10px black;
+    text-align: center;
+    font-size: 30px;
 }
+
+.subscribe-newsletter input[type="text"] {
+
+}
+
+.subscribe-newsletter input[type="button"] {
+
+}
+
+
+
+
+
 
 .zegar p {
     text-align: center;
