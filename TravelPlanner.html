@@ -30,9 +30,8 @@
                 <div class="box2"><p>SEK</p></div>
             </div>
         </div>
-        <a href='http://www.onet.pl'></a>
         <script>
-            onload(licz());
+            licz();
             function licz() {
                 var data = new Date();
                 var data2 = new Date(2016, 4, 20, 17);
@@ -57,7 +56,7 @@
                     document.getElementById("godz").innerHTML = godz;
                     document.getElementById("min").innerHTML = min;
                     document.getElementById("sek").innerHTML = sek;
-                    setTimeout(function () {licz();}, 1000);
+                    setTimeout(licz, 1000);
                 }
             }
         </script>
