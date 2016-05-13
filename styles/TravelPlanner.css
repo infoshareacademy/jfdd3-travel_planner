@@ -160,3 +160,45 @@ header .box2 {
     text-align: center;
     width: 100%;
 }
+.lista-cech {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+}
+.lista-cech2 {
+    position: relative;
+    height: 80px;
+    margin: 5px;
+}
+.lista-bus {
+    position: absolute;
+    left: -180px;
+    width: 150px;
+    height: 100%;
+    background-image: url(../images/urbino.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: left 3s;
+}
+.lista-lista {
+    position: absolute;
+    display: inline;
+    left: 180px;
+    height: 100%;
+    max-width: 83%;
+    line-height: 80px;
+    text-align: center;
+    text-shadow: 3px 3px 5px #8e8e8e;
+}
+span.lista1 {
+    font-family: Arial;
+    font-size: 25px;
+    color: #ff3e3e;
+    transition: font-size 3s;
+}
+.lista-cech2:hover .lista-bus {
+    left: 0;
+}
+.lista-cech2:hover .lista1 {
+    font-size: 30px;
+}
