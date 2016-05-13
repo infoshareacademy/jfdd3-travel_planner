@@ -20,7 +20,7 @@ main {
 }
 
 footer {
-    height: 80px;
+    height: 90px;
     width: auto;
     background-color: #ff3e3e;
     font-style: italic;
@@ -95,4 +95,17 @@ footer {
 
 .foot {
     height: 90px;
+}
+
+p {
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: "Century Schoolbook L";
+    font-style: italic;
+    font-stretch: expanded;
+    /*margin-left: 100px;*/
+    /*margin-right: 500px;*/
+    margin-top: 15px;
+    text-shadow: 0px 0px 10px black;
+    text-align: left;
 }
