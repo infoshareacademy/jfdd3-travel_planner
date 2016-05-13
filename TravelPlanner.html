@@ -9,7 +9,58 @@
 <body>
 
     <header>
-        <img src="images/logo.jpg" alt="logo TravelPlanner" width="190" height="150">
+        <div class="zegar">
+            <div class="bigbox">
+                <p>Do końca pierwszego sprintu pozostało dni:</p>
+            </div>
+            <div class="bigbox">
+                <div class="box"><h1 id="dni"></h1></h1></div>
+                <div class="box2"><p>DNI</p></div>
+            </div>
+            <div class="bigbox">
+                <div class="box"><h1 id="godz"></h1></div>
+                <div class="box2"><p>GODZ</p></div>
+            </div>
+            <div class="bigbox">
+                <div class="box"><h1 id="min"></h1></div>
+                <div class="box2"><p>MIN</p></div>
+            </div>
+            <div class="bigbox">
+                <div class="box"><h1 id="sek"></h1></div>
+                <div class="box2"><p>SEK</p></div>
+            </div>
+        </div>
+        <a href='http://www.onet.pl'></a>
+        <script>
+            onload(licz());
+            function licz() {
+                var data = new Date();
+                var data2 = new Date(2016, 4, 20, 17);
+                var roznica = (data2 - data)/ 86400000;
+                if (roznica < 0) {
+                    document.getElementById("dni").innerHTML = '--';
+                    document.getElementById("godz").innerHTML = '--';
+                    document.getElementById("min").innerHTML = '--';
+                    document.getElementById("sek").innerHTML = '--';
+                }
+                else {
+                    var dni = Math.floor(roznica);
+                    roznica = 24 * (roznica - dni);
+                    var godz = Math.floor(roznica);
+                    roznica = 60 * (roznica - godz);
+                    var min = Math.floor(roznica);
+                    var sek = Math.round(60 * (roznica - min));
+                    if (sek == 60) {sek = 0; min++;}
+                    if (min == 60) {min = 0;godz++;}
+                    if (godz == 24) {godz = 0;dni++;}
+                    document.getElementById("dni").innerHTML = dni;
+                    document.getElementById("godz").innerHTML = godz;
+                    document.getElementById("min").innerHTML = min;
+                    document.getElementById("sek").innerHTML = sek;
+                    setTimeout(function () {licz();}, 1000);
+                }
+            }
+        </script>
     </header>
 
     <main>
