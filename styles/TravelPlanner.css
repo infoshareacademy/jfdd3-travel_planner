@@ -111,6 +111,11 @@ p {
     text-shadow: 0px 0px 10px black;
     text-align: left;
 }
+
+.zegar p {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
 header > .zegar {
     position: absolute;
     right: 0px;
