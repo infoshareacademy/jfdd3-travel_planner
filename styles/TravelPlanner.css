@@ -104,7 +104,7 @@ footer {
     background-image: url('../images/newsletter.png');
     background-repeat: no-repeat;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .subscribe-newsletter p {
@@ -119,6 +119,7 @@ footer {
 }
 
 .subscribe-newsletter input[type="text"] {
+
 
 }
 
