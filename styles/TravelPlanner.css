@@ -1,11 +1,10 @@
 header {
     height: 150px;
     width:auto;
-    background-color: white;
     font-style: italic;
     font-weight: bold;
     font-stretch: expanded;
-    background-image: url(../images/logo.png);
+    background-image: url(../images/logo.jpg);
     background-repeat: no-repeat;
     background-size: contain;
 
