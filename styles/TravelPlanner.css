@@ -22,7 +22,7 @@ main {
 footer {
     height: 80px;
     width: auto;
-    background-color: red;
+    background-color: #ff3e3e;
     font-style: italic;
     font-weight: bold;
     font-stretch: expanded;
@@ -44,7 +44,8 @@ footer {
     width:100%;
     height: 500px;
 
-    /*background-image: url('../images/map8.png');*/
+    background-image: url('../images/map8.png');
+    background-position: center;
 
 }
 .mapa {
@@ -91,14 +92,7 @@ footer {
     border-radius: 10%;
     box-shadow: 5px 5px 13px -6px;
 }
-.zegar {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    background-color: rgba(255,255,255,0.5);
-    min-width: 300px;
-    min-height: 100px;
-}
+
 .foot {
     height: 90px;
 }
