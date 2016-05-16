@@ -167,24 +167,30 @@ footer {
     margin-left:14px;
 }
 .o-nas-1 {
-    width:100%;
     border-top:1px dotted black;
     background-color: rgb(248,248,248);
 }
-.karina {
-    width:25%;
+/*.karina {
+    width:200px;
     height:200px;
     border-radius:50%;
     margin:52px;
     background-image: url('../images/baszta_slomiana.jpg');
-    bacg
-}
+    background-size:contain;
+    background-repeat:no-repeat;
+}*/
 
 .lukasz {
     width:180px;
     height:180px;
     border-radius:50%;
-    margin:52px;
+    margin:79px;
+    float: left;
+}
+.lukasz-image{
+    border-radius:50%;
+    width:180px;
+    height:180px;
 }
 .subscribe-newsletter {
     height: 110px;
@@ -294,6 +300,9 @@ span.lista1 {
 }
 .lista-cech2:hover .lista1 {
     font-size: 30px;
+}
+.empty {
+    height:144px;
 }
 
 footer {
