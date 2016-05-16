@@ -7,12 +7,11 @@ header {
     background-image: url(../images/logo.jpg);
     background-repeat: no-repeat;
     background-size: contain;
+    background-color: rgb(248,248,248);
 
 }
 
 main {
-    height: 500px;
-    width: auto;
     background-color: white;
     font-style: italic;
     font-weight: bold;
@@ -22,10 +21,11 @@ main {
 }
 
 footer {
+    height: 40px;
     padding-top: 10px;
     height: 50px;
     width: auto;
-    background-color: #ff3e3e;
+    background-color: rgb(64,186,180);
     font-style: italic;
     font-weight: bold;
     font-stretch: expanded;
@@ -42,23 +42,77 @@ footer {
 #id1 {
     float: right;
 }
-.cl2 {
+.kontener-mapy {
     position: relative;
-    width:100%;
+    width: 100%;
     height: 500px;
-
-    background-image: url('../images/map8.png');
-    background-position: center;
-
+}
+.lokalizacja {
+    position: absolute;
+    top:2%;
+    left:1%;
+    max-width:23%;
+    height:53%;
+    z-index:1;
+    background: rgb(248,248,248);
+    padding: 30px 30px 20px 30px;
+    font: 12px Arial, Helvetica, sans-serif;
+    color: rgb(0,6,102);
+    border-radius: 5px;
+}
+.lokalizacja h1 {
+    font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding: 20px 0px 20px 40px;
+    display: block;
+    margin: -30px -30px 10px -30px;
+    color: rgb(255,255,255);
+    background: rgb(64,186,180);
+    text-shadow: 1px 1px 1px rgb(148,148,148);
+    border-radius: 5px 5px 0px 0px;
+    border-bottom:1px solid rgb(57,147,143);
+}
+.lokalizacja label {
+    display: block;
+    margin: 0px 0px 5px;
+}
+.lokalizacja label>span {
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: rgb(94,94,94);
+}
+.lokalizacja input[type="text"] {
+    color: rgb(0,5,85);
+    height: 30px;
+    width: 100%;
+    padding: 0px 0px 0px 10px;
+    margin-top: 2px;
+    border: 1px solid rgb(229,229,229);
+    background: rgb(251,251,251);
+    outline: 0;
+    box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+    font: normal 14px/14px Arial, Helvetica, sans-serif;
+}
+.lokalizacja input[type="submit"] {
+    background-color: rgb(64,186,180);
+    border-radius: 5px;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #949494;
+}
+.lokalizacja input[type="submit"]:hover {
+    background-color:rgb(69,142,139);
 }
 .mapa {
     position: absolute;
     width: 100%;
+    height:100%;
 }
 .zur-gda {
     position: absolute;
-    top:11%;
-    right:19%;
+    top:16%;
+    left:86%;
     width:7%;
     max-height:30%;
     border:1px solid black;
@@ -67,8 +121,8 @@ footer {
 }
 .brama-wyz {
     position: absolute;
-    top: 4%;
-    left:29%;
+    top: 3%;
+    left:32%;
     width:7%;
     max-height: 30%;
     border:1px solid black;
@@ -77,8 +131,8 @@ footer {
 }
 .fon-nep {
     position: absolute;
-    top:44%;
-    left:59%;
+    top:58%;
+    left:67%;
     width:6%;
     max-height: 22%;
     border:1px solid black;
@@ -87,15 +141,32 @@ footer {
 }
 .dom-uph {
     position: absolute;
-    top:34%;
-    left:38%;
+    top:40%;
+    left:43%;
     width:7%;
     max-height: 30%;
     border:1px solid black;
     border-radius: 10%;
     box-shadow: 5px 5px 13px -6px;
 }
-
+.wykaz-funkcji {
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    height:600px;
+    background-color: rgb(248,248,248);
+}
+.wykaz {
+    width:460px;
+    height:123px;
+    margin-top:39px;
+    margin-left:132px;
+    justify-content: center;
+    display: flex;
+}
+.par-aparat {
+    margin-left:14px;
+}
 
 .subscribe-newsletter {
     height: 110px;
