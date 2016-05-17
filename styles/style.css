@@ -188,6 +188,7 @@ form, input, select, textarea {
     margin:auto;
     background-color:rgb(248,248,248);
     color:rgb(94,94,94);
+
 }
 
 div.box6 {
@@ -197,6 +198,7 @@ div.box6 {
     position:relative;
     top:50px;
     border:1px solid rgba(64,186,180,0.8);
+    border-radius: 5px;
 
 }
 
@@ -233,8 +235,8 @@ div.box6 .wpis {
     padding:10px 10px;
     width:250px;
     background:#ffffff;
-    border-bottom: 1px double rgba(64,186,180,0.8);
-    border-top: 1px double rgba(64,186,180,0.8);
+    border-bottom: 1px double rgb(229,229,229);
+    border-top: 1px double rgb(229,229,229);
     border-left:1px double rgb(229,229,229);
     border-right:1px double rgb(229,229,229);
 }
@@ -243,8 +245,8 @@ div.box6 .wiadomosc {
     padding:7px 7px;
     width:250px;
     background:#ffffff;
-    border-bottom: 1px double rgba(64,186,180,0.8);
-    border-top: 1px double rgba(64,186,180,0.8);
+    border-bottom: 1px double rgb(229,229,229);
+    border-top: 1px double rgb(229,229,229);
     border-left:1px double rgb(229,229,229);
     border-right:1px double rgb(229,229,229);
     overflow:hidden;
