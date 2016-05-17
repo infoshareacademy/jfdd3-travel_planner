@@ -8,7 +8,7 @@ header {
     font-style: italic;
     font-weight: bold;
     font-stretch: expanded;
-    background-image: url(../images/logo.jpg);
+    background-image: url(../images/logo2.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-color: rgb(255,255,255);
@@ -36,6 +36,7 @@ footer {
     bottom: 0;
     left: 0;
     right:0;
+    z-index: 3;
 }
 
 .cl1 {
@@ -171,45 +172,6 @@ footer {
     margin-left:14px;
 }
 
-.subscribe-newsletter {
-    height: 110px;
-    width: 299px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url('../images/newsletter.png');
-    background-repeat: no-repeat;
-    margin-top: 50px;
-    margin-bottom: 100px;
-}
-
-.subscribe-newsletter p {
-    font-weight: lighter;
-    font-family: "Century Schoolbook L", serif;
-    font-style: italic;
-    font-stretch: expanded;
-    margin-top: 15px;
-    padding-top: 10px;
-    text-shadow: 0 0 10px black;
-    text-align: center;
-    font-size: 30px;
-}
-
-.subscribe-newsletter {
-    text-align: center;
-}
-
-.subscribe-newsletter input[type="text"] {
-
-}
-
-.subscribe-newsletter input[type="button"] {
-}
-
-
-
-
-
-
 .zegar p {
     text-align: center;
     font-family: Arial, sans-serif;
@@ -241,7 +203,6 @@ header .box2 {
 
 footer {
   text-align: center;
-    z-index: 3;
 }
 .fog {
     position: absolute;
@@ -266,3 +227,91 @@ footer {
     text-shadow: none;
     visibility: hidden;
 }
+
+body {
+    font: 100% normal Arial, Helvetica, sans-serif;
+    background: #161712;
+}
+form, input, select, textarea {
+    margin:auto;
+    padding:0;
+    color:#ffffff;
+}
+
+div.box6 {
+    margin:auto;
+    width: 400px;
+    background:#222222;
+    position:relative;
+    top:50px;
+    border:1px solid #262626;
+
+}
+
+div.box6 h1 {
+    color:#ffffff;
+    font-size:18px;
+    text-transform:uppercase;
+    padding:5px 0 5px 5px;
+    border-bottom:1px solid #161712;
+    border-top:1px solid #161712;
+}
+
+div.box6 label {
+    width:100%;
+    display: block;
+    background:#1C1C1C;
+    border-top:1px solid #262626;
+    border-bottom:1px solid #161712;
+    padding:10px 0 10px 0;
+}
+
+div.box6 label span {
+    display: block;
+    color:#bbbbbb;
+    font-size:12px;
+    float:left;
+    width:100px;
+    text-align:right;
+    padding:5px 20px 0 0;
+}
+
+div.box6 .wpis {
+    padding:10px 10px;
+    width:250px;
+    background:#262626;
+    border-bottom: 1px double #171717;
+    border-top: 1px double #171717;
+    border-left:1px double #333333;
+    border-right:1px double #333333;
+}
+
+div.box6 .wiadomosc {
+    padding:7px 7px;
+    width:250px;
+    background:#262626;
+    border-bottom: 1px double #171717;
+    border-top: 1px double #171717;
+    border-left:1px double #333333;
+    border-right:1px double #333333;
+    overflow:hidden;
+    height:150px;
+}
+
+div.box6 .button	{
+    margin:0 0 10px 0;
+    padding:4px 7px;
+    background:#CC0000;
+    border:0px;
+    position: relative;
+    top:10px;
+    left:150px;
+    width:100px;
+    border-bottom: 1px double #660000;
+    border-top: 1px double #660000;
+    border-left:1px double #FF0033;
+    border-right:1px double #FF0033;
+}
+
+
+
