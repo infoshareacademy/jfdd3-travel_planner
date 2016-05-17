@@ -31,10 +31,9 @@ footer {
     font-style: italic;
     font-weight: bold;
     font-stretch: expanded;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right:0;
+    display: block;
+    position: relative;
+    top: 100px;
     z-index: 3;
 }
 
@@ -204,7 +203,7 @@ body {
 }
 form, input, select, textarea {
     margin:auto;
-    padding:9%;
+
     color:#ffffff;
 }
 
