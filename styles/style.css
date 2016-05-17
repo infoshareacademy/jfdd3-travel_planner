@@ -20,21 +20,6 @@ main {
 
 }
 
-footer {
-    font-size: 0.75em;
-    text-align: center;
-    text-decoration: none;
-    padding-top: 10px;
-    height: 70px;
-    width: auto;
-    background-color: rgb(64,186,180);
-    font-weight: bold;
-    font-stretch: expanded;
-    position: relative;  /*  zmiana z fixed na absolute, aby nie latal */
-    bottom: 0;
-    left: 0;
-    right:0;
-}
 
 .cl1 {
     float: left;
@@ -279,14 +264,28 @@ span.lista1 {
     font-size: 30px;
 }
 
+footer {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 0.75em;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 5px;
+    height: 100px;
+    width: auto;
+    background-color: rgb(64,186,180);
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right:0;
+}
 
 .footer-image {
-    width: 10%;
-    height: 10%;
+    width: 50%;
+    height: 50%;
 }
 
 .footer-left {
-    margin-top: 20px;
     float: left;
     width: 33%;
 }
@@ -297,13 +296,81 @@ span.lista1 {
 }
 
 .footer-right {
-    margin-top: 20px;
     float: right;
     width: 33%;
-    text-align: left;
+}
+
+.footer-copyright {
+    color: #FFFFFF;
 }
 
 footer a {
     text-decoration: none;
     color: white;
+}
+
+footer li {
+    list-style: none;
+}
+
+form {
+    width: 75%;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    color: #FDFCFB;
+    text-align: center;
+}
+
+.header {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+}
+
+
+.button {
+    height: 30px;
+    border: none;
+}
+
+
+#email {
+    width: 75%;
+    background: #FDFCFB;
+    font-family: inherit;
+    color: #737373;
+    letter-spacing: 1px;
+    text-indent: 5%;
+    border-radius: 5px 0 0 5px;
+}
+
+
+#submit {
+    width: 25%;
+    height: 32px;
+    background: #e8bf2a;
+    font-family: inherit;
+    font-weight: bold;
+    color: inherit;
+    letter-spacing: 1px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+}
+
+
+#submit:hover {
+    background: #d4a21f;
+}
+
+
+input:focus {
+    outline: none;
+    outline: 2px solid #e8bf2a;
+    box-shadow: 0 0 2px #e8bf2a;
 }

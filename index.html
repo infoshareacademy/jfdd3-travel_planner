@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Travel Planner</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
 </head>
     <body>
     <header>
@@ -59,6 +61,9 @@
             }
         </script>
     </header>
+
+
+
 
     <div class="kontener-mapy">
 
@@ -132,56 +137,46 @@
     </div>
 
 
-     <!--<main>
-        <div class="lista-cech">
-            <div class="lista-cech2">
-                <div class="lista-bus"></div>
-                <div class="lista-lista"><span class="lista1">Travel Planner to największa baza punktów turystycznych w Gdańsku !</span></div>
-            </div>
-            <div class="lista-cech2">
-                <div class="lista-bus"></div>
-                <div class="lista-lista"><span class="lista1">Travel Planner to zawsze aktualne rozkłady komunikacji miejskiej !</span></div>
-            </div>
-            <div class="lista-cech2">
-                <div class="lista-bus"></div>
-                <div class="lista-lista"><span class="lista1">Travel Planner to najszybsza droga do historii miasta !</span></div>
-            </div>
-            <div class="lista-cech2">
-                <div class="lista-bus"></div>
-                <div class="lista-lista"><span class="lista1">Z Travel Planner, Gdańsk nie ma przed Tobą tajemnic !</span></div>
-            </div>
-            <div class="lista-cech2">
-                <div class="lista-bus"></div>
-                <div class="lista-lista"><span class="lista1">Z Travel Planner zwiedzisz Gdańsk szybko i ciekawie !</span></div>
-            </div>
-        </div>
-        <div class="subscribe-newsletter">
-            <p>Newsletter</p>
-            <input type="text" placeholder="adres email">
-            <input type="submit" value="wyślij">
-        </div>
-     </main>-->
-
     <footer>
         <div class = "container">
             <div class ="footer-left">
-                <a href="#">Menu Item |</a>
-                <a href="#"> Menu Item |</a>
-                <a href="#"> Menu Item</a>
-
+                <ul>
+                    <li><a href="#">Menu Item</a></li>
+                    <li><a href="#">Menu Item</a></li>
+                    <li><a href="#">Menu Item</a></li>
+                </ul>
             </div>
 
             <div class = "footer-center">
-                <a href="#"><img class="footer-image" src="images/googleplus.png"/></a>
-                <a href="#"><img class="footer-image" src="images/facebook.png"/></a>
-                <a href="#"><img class="footer-image" src="images/tumblr.png"/></a>
+                <table>
+                    <tr>
+                        <td><a href="#"><img class="footer-image" src="images/twitter.png"/></a></td>
+                        <td><a href="#"><img class="footer-image" src="images/facebook.png"/></a></td>
+                        <td><a href="#"><img class="footer-image" src="images/instagram.png"/></a></td>
+                        <td><a href="#"><img class="footer-image" src="images/youtube.png"/></a></td>
+                    </tr>
+                </table>
+
             </div>
 
+
             <div class = "footer-right">
-                <a href="#">Terms & Conditions</a>
-                <a href="#">Terms of Use</a>
+                <form action="#" method="post" name="sign up for beta form">
+                    <div class="header">
+                        <p>Zapisz się na premierę</p>
+                    </div>
+                    <div class="input">
+                        <input type="text" class="button" id="email" name="email" placeholder="ADRES EMAIL">
+                        <input type="submit" class="button" id="submit" value="SIGN UP">
+                    </div>
+                </form>
             </div>
         </div>
+
+        <div class = "footer-copyright">
+            Niewyspani &copy;2016 &bull; <a href="#">Privacy</a> &bull; <a href="#">Terms</a>
+        </div>
     </footer>
+
 </body>
 </html>
