@@ -33,10 +33,9 @@ footer {
     font-style: italic;
     font-weight: bold;
     font-stretch: expanded;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right:0;
+    display: block;
+    position: relative;
+    top: 100px;
     z-index: 3;
 }
 
@@ -67,7 +66,7 @@ footer {
 }
 .lokalizacja h1 {
     font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
-    padding: 20px  20px 40px;
+    padding: 20px 0 20px 40px;
     display: block;
     margin: -30px -30px 10px -30px;
     color: rgb(255,255,255);
@@ -201,41 +200,42 @@ footer {
 }
 form, input, select, textarea {
     margin:auto;
-    padding:0;
-    color:#ffffff;
+    background-color:rgb(248,248,248);
+    color:rgb(94,94,94);
 }
 
 div.box6 {
     margin:auto;
     width: 400px;
-    background:#222222;
+    background:rgba(64,186,180,0.8);
     position:relative;
     top:50px;
-    border:1px solid #262626;
+    border:1px solid rgba(64,186,180,0.8);
 
 }
 
 div.box6 h1 {
-    color:#ffffff;
-    font-size:18px;
-    text-transform:uppercase;
+    color:rgb(94,94,94);
+    font-size:16px;
+    text-transform:inherit;
     padding:5px 0 5px 5px;
-    border-bottom:1px solid #161712;
-    border-top:1px solid #161712;
+    border-bottom:1px solid rgba(64,186,180,0.8);
+    border-top:1px solid rgba(64,186,180,0.8);
+    text-align: center;
 }
 
 div.box6 label {
     width:100%;
     display: block;
-    background:#1C1C1C;
-    border-top:1px solid #262626;
-    border-bottom:1px solid #161712;
+    background:rgb(248,248,248);
+    border-top:1px solid rgba(64,186,180,0.8);
+    border-bottom:1px solid rgb(229,229,229);
     padding:10px 0 10px 0;
 }
 
 div.box6 label span {
     display: block;
-    color:#bbbbbb;
+    color:rgb(94,94,94);
     font-size:12px;
     float:left;
     width:100px;
@@ -246,21 +246,21 @@ div.box6 label span {
 div.box6 .wpis {
     padding:10px 10px;
     width:250px;
-    background:#262626;
-    border-bottom: 1px double #171717;
-    border-top: 1px double #171717;
-    border-left:1px double #333333;
-    border-right:1px double #333333;
+    background:#ffffff;
+    border-bottom: 1px double rgba(64,186,180,0.8);
+    border-top: 1px double rgba(64,186,180,0.8);
+    border-left:1px double rgb(229,229,229);
+    border-right:1px double rgb(229,229,229);
 }
 
 div.box6 .wiadomosc {
     padding:7px 7px;
     width:250px;
-    background:#262626;
-    border-bottom: 1px double #171717;
-    border-top: 1px double #171717;
-    border-left:1px double #333333;
-    border-right:1px double #333333;
+    background:#ffffff;
+    border-bottom: 1px double rgba(64,186,180,0.8);
+    border-top: 1px double rgba(64,186,180,0.8);
+    border-left:1px double rgb(229,229,229);
+    border-right:1px double rgb(229,229,229);
     overflow:hidden;
     height:150px;
 }
@@ -268,15 +268,17 @@ div.box6 .wiadomosc {
 div.box6 .button	{
     margin:0 0 10px 0;
     padding:4px 7px;
-    background:#CC0000;
-    border:0;
+    background:rgba(64,186,180,0.8);
+    border:0px;
     position: relative;
     top:10px;
     left:150px;
     width:100px;
-    border-bottom: 1px double #660000;
-    border-top: 1px double #660000;
-    border-left:1px double #FF0033;
-    border-right:1px double #FF0033;
+    border-bottom: 1px double rgb(248,248,248);
+    border-top: 1px double rgb(248,248,248);
+    border-left:1px double rgb(248,248,248);
+    border-right:1px double rgb(248,248,248);
 }
+
+
 
