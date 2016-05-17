@@ -5,67 +5,15 @@
     <title>Travel Planner</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
-
-
-
 <body>
-
     <header>
-        <div class="zegar">
-            <div class="bigbox">
-                <p>Do końca pierwszego sprintu pozostało dni:</p>
-            </div>
-            <div class="bigbox">
-                <div class="box"><h1 id="dni"></h1></div>
-                <div class="box2"><p>DNI</p></div>
-            </div>
-            <div class="bigbox">
-                <div class="box"><h1 id="godz"></h1></div>
-                <div class="box2"><p>GODZ</p></div>
-            </div>
-            <div class="bigbox">
-                <div class="box"><h1 id="min"></h1></div>
-                <div class="box2"><p>MIN</p></div>
-            </div>
-            <div class="bigbox">
-                <div class="box"><h1 id="sek"></h1></div>
-                <div class="box2"><p>SEK</p></div>
-            </div>
-        </div>
-        <script>
-            licz();
-            function licz() {
-                var data = new Date();
-                var data2 = new Date(2016, 4, 20, 17);
-                var roznica = (data2 - data)/ 86400000;
-                if (roznica < 0) {
-                    document.getElementById("dni").innerHTML = '--';
-                    document.getElementById("godz").innerHTML = '--';
-                    document.getElementById("min").innerHTML = '--';
-                    document.getElementById("sek").innerHTML = '--';
-                }
-                else {
-                    var dni = Math.floor(roznica);
-                    roznica = 24 * (roznica - dni);
-                    var godz = Math.floor(roznica);
-                    roznica = 60 * (roznica - godz);
-                    var min = Math.floor(roznica);
-                    var sek = Math.round(60 * (roznica - min));
-                    if (sek == 60) {sek = 0; min++;}
-                    if (min == 60) {min = 0;godz++;}
-                    if (godz == 24) {godz = 0;dni++;}
-                    document.getElementById("dni").innerHTML = dni;
-                    document.getElementById("godz").innerHTML = godz;
-                    document.getElementById("min").innerHTML = min;
-                    document.getElementById("sek").innerHTML = sek;
-                    setTimeout(licz, 1000);
-                }
-            }
-        </script>
     </header>
 
     <div class="kontener-mapy">
-
+        <div class="fog"><h1>
+            Chcesz zwiedzić Gdańsk szybko i sprawnie?<br>Podróżuj z TravelPlanner !
+        </h1>
+        </div>
         <form action="" class="lokalizacja">
             <h1>Zaplanuj swoją podróż.</h1>
             <label>
@@ -80,7 +28,6 @@
             <br><br>
             <input type="submit" value="Zatwierdź">
         </form>
-
         <img src="images/map9.png" alt="mapa" class="mapa">
         <img src="images/zuraw_gdanski.jpg" alt="zuraw" class="zur-gda">
         <img src="images/fontanna_neptuna.jpg" alt="fontanna" class="fon-nep">
@@ -158,36 +105,11 @@
     </form>
 
 
-
-     <!--<main>
-        <div class="lista-cech">
-            <div class="lista-cech2">
-                <div class="lista-bus"></div>
-                <div class="lista-lista"><span class="lista1">Travel Planner to największa baza punktów turystycznych w Gdańsku !</span></div>
-            </div>
-            <div class="lista-cech2">
-                <div class="lista-bus"></div>
-                <div class="lista-lista"><span class="lista1">Travel Planner to zawsze aktualne rozkłady komunikacji miejskiej !</span></div>
-            </div>
-            <div class="lista-cech2">
-                <div class="lista-bus"></div>
-                <div class="lista-lista"><span class="lista1">Travel Planner to najszybsza droga do historii miasta !</span></div>
-            </div>
-            <div class="lista-cech2">
-                <div class="lista-bus"></div>
-                <div class="lista-lista"><span class="lista1">Z Travel Planner, Gdańsk nie ma przed Tobą tajemnic !</span></div>
-            </div>
-            <div class="lista-cech2">
-                <div class="lista-bus"></div>
-                <div class="lista-lista"><span class="lista1">Z Travel Planner zwiedzisz Gdańsk szybko i ciekawie !</span></div>
-            </div>
-        </div>
         <div class="subscribe-newsletter">
             <p>Newsletter</p>
             <input type="text" placeholder="adres email">
             <input type="submit" value="wyślij">
         </div>
-     </main>-->
 
     <footer>Design by: Niewyspani&reg;
 
