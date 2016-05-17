@@ -189,10 +189,6 @@ main {
 }
 
 
-
-
-
-
 .zegar p {
     text-align: center;
     font-family: Arial, sans-serif;
@@ -264,20 +260,23 @@ span.lista1 {
     font-size: 30px;
 }
 
+/*  FOOTER SETUP  */
+
 footer {
     font-family: 'Lato', sans-serif;
     text-align: center;
     font-size: 0.75em;
     text-align: center;
     text-decoration: none;
-    padding-top: 5px;
-    height: 100px;
+    /*padding-top: 5px;*/
+    height: auto;
     width: auto;
     background-color: rgb(64,186,180);
     position: relative;
     bottom: 0;
     left: 0;
     right:0;
+    clear: both;
 }
 
 .footer-image {
@@ -285,23 +284,8 @@ footer {
     height: 50%;
 }
 
-.footer-left {
-    float: left;
-    width: 33%;
-}
-
-.footer-center {
-    display: inline-block;
-    width: 33%;
-}
-
-.footer-right {
-    float: right;
-    width: 33%;
-}
-
 .footer-copyright {
-    color: #FFFFFF;
+    color: #FFFFFF;  /* wywalic po globalnej zmianie fonta i koloru fonta */
 }
 
 footer a {
@@ -313,8 +297,11 @@ footer li {
     list-style: none;
 }
 
+/*  FOOTER SIGN IN FORM  */
+
+
 form {
-    width: 75%;
+    width: 55%;
     margin: 0 auto;
     font-family: 'Lato', sans-serif;
     color: #FDFCFB;
@@ -351,7 +338,7 @@ form {
 
 
 #submit {
-    width: 25%;
+    width: 40%;
     height: 32px;
     background: #e8bf2a;
     font-family: inherit;
@@ -374,3 +361,55 @@ input:focus {
     outline: 2px solid #e8bf2a;
     box-shadow: 0 0 2px #e8bf2a;
 }
+
+/*  FOOTER SECTIONS  */
+.section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*  FOOTER COLUMN SETUP  */
+.col {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child {
+    margin-left: 0;
+}
+
+.socialmedia {
+    display: inline-flex;
+}
+
+/* FOOTER GROUPING  */
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+
+  /*GRID OF THREE  */
+.span_3_of_3 {
+    width: 98%;
+}
+.span_2_of_3 {
+    width: 48%;
+    margin-top: 40px;
+}
+.span_1_of_3 {
+    width: 48%;
+}
+
+/* FOOTER GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+    .col { margin: 1% 0 1% 0%;}
+    .span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
+
