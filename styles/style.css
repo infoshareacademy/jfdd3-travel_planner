@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    font-family: Free Sans, Arial, sans-serif;
+    background: #161712;
 }
 header {
     height: 150px;
@@ -197,11 +199,6 @@ footer {
     text-shadow: none;
     visibility: hidden;
 }
-
-body {
-    font: 100% normal Arial, Helvetica, sans-serif;
-    background: #161712;
-}
 form, input, select, textarea {
     margin:auto;
     padding:0;
@@ -282,6 +279,4 @@ div.box6 .button	{
     border-left:1px double #FF0033;
     border-right:1px double #FF0033;
 }
-
-
 
