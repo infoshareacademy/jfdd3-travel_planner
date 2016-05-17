@@ -1,6 +1,5 @@
 body {
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0;
 }
 header {
     height: 150px;
@@ -10,9 +9,9 @@ header {
     font-stretch: expanded;
     background-image: url(../images/logo2.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 130px;
     background-color: rgb(255,255,255);
-
+    background-position: 10px;
 }
 
 main {
@@ -170,35 +169,6 @@ footer {
 }
 .par-aparat {
     margin-left:14px;
-}
-
-.zegar p {
-    text-align: center;
-    font-family: Arial, sans-serif;
-}
-header > .zegar {
-    position: absolute;
-    right: 0;
-}
-header .bigbox {
-    display: inline-block;
-    position: relative;
-    min-width: 50px;
-    height: 100px;
-    margin: 5px;
-}
-header .box {
-    border: solid 1px black;
-    border-radius: 10px;
-    line-height: 35px;
-    background-color: lavender;
-    text-align: center;
-}
-header .box2 {
-    position: absolute;
-    bottom: -20px;
-    text-align: center;
-    width: 100%;
 }
 
 footer {
