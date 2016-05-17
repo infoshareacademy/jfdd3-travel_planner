@@ -26,7 +26,6 @@ main {
 footer {
     height: 40px;
     padding-top: 10px;
-    height: 50px;
     width: auto;
     background-color: rgb(64,186,180);
     font-style: italic;
@@ -65,13 +64,13 @@ footer {
 }
 .lokalizacja h1 {
     font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
-    padding: 20px 0px 20px 40px;
+    padding: 20px 0 20px 40px;
     display: block;
     margin: -30px -30px 10px -30px;
     color: rgb(255,255,255);
     background: rgb(64,186,180);
     text-shadow: 1px 1px 1px rgb(148,148,148);
-    border-radius: 5px 5px 0px 0px;
+    border-radius: 5px 5px 0 0;
     border-bottom:1px solid rgb(57,147,143);
 }
 .lokalizacja label {
@@ -171,26 +170,37 @@ footer {
 .o-nas-1 {
     width:100%;
     display: flex;
+    flex-wrap: wrap;
     border-top:1px dotted black;
-    background-color: rgb(248,248,248);
+    background-image: url("../images/pan_gda.jpg");
+    background-size: cover;
+    background-color: #FFFFFF;
+    background-blend-mode: luminosity, normal;
 }
 .o-nas-2 {
-
-    width:460px;
+    max-width:264px;
     height:361px;
+    margin-left:4%;
 }
 .o-nas-image {
     border-radius:50%;
-    width:35%;
+    width:45%;
     height:35%;
     margin-top:50px;
-    margin-left:41px;
+    margin-left:78px;
+}
+.o-nas-footer {
+    background-color: rgb(248,248,248);
+    border-radius:5px;
+    width:250px;
+    margin-left:11px;
+
+}
+.o-nas-h2 {
+    text-align: center;
 }
 .clear-o-nas {
     height:20px;
-}
-.o-nas-footer {
-    width:60%;
 }
 .subscribe-newsletter {
     height: 110px;
