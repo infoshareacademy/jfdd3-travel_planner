@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    font-family: Free Sans, Arial, sans-serif;
+    background: rgb(248,248,248);
+}
 header {
     height: 150px;
     width:auto;
@@ -6,43 +11,26 @@ header {
     font-stretch: expanded;
     background-image: url(../images/logo.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
-    background-color: rgb(248,248,248);
-
+    background-size: 150px;
+    background-color: rgb(255,255,255);
+    background-position: 10px;
 }
-body {
-    background-color: rgb(248,248,248);
-}
-
-main {
-    background-color: white;
-    font-style: italic;
-    font-weight: bold;
-    font-stretch: expanded;
-
-
-}
-
 footer {
-    height: 40px;
     padding-top: 10px;
+    height: 50px;
     width: auto;
     background-color: rgb(64,186,180);
     font-style: italic;
     font-weight: bold;
     font-stretch: expanded;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right:0;
+    display: block;
+    position: relative;
+    top: 100px;
+    z-index: 3;
 }
 
 .cl1 {
     float: left;
-}
-
-#id1 {
-    float: right;
 }
 .kontener-mapy {
     position: relative;
@@ -75,7 +63,7 @@ footer {
 }
 .lokalizacja label {
     display: block;
-    margin: 0px 0px 5px;
+    margin: 0 0 5px;
 }
 .lokalizacja label>span {
     float: left;
@@ -87,7 +75,7 @@ footer {
     color: rgb(0,5,85);
     height: 30px;
     width: 100%;
-    padding: 0px 0px 0px 10px;
+    padding: 0 0 0 10px;
     margin-top: 2px;
     border: 1px solid rgb(229,229,229);
     background: rgb(251,251,251);
@@ -223,98 +211,115 @@ footer {
     text-shadow: 0 0 10px black;
     text-align: center;
     font-size: 30px;
-}
-
-.subscribe-newsletter {
-    text-align: center;
-}
-
-.subscribe-newsletter input[type="text"] {
-
-}
-
-.subscribe-newsletter input[type="button"] {
-}
-
-
-
-
-
-
-.zegar p {
-    text-align: center;
-    font-family: Arial, sans-serif;
-}
-header > .zegar {
-    position: absolute;
-    right: 0;
-}
-header .bigbox {
-    display: inline-block;
-    position: relative;
-    min-width: 50px;
-    height: 100px;
-    margin: 5px;
-}
-header .box {
-    border: solid 1px black;
-    border-radius: 10px;
-    line-height: 35px;
-    background-color: lavender;
-    text-align: center;
-}
-header .box2 {
-    position: absolute;
-    bottom: -20px;
-    text-align: center;
-    width: 100%;
-}
-.lista-cech {
-    padding-left: 40px;
-    padding-right: 40px;
-    width: 83%;
-}
-.lista-cech2 {
-    position: relative;
-    height: 80px;
-    margin: 5px;
-}
-.lista-bus {
-    position: absolute;
-    left: -180px;
-    width: 150px;
-    height: 100%;
-    background-image: url(../images/urbino.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: left 3s;
-}
-.lista-lista {
-    position: absolute;
-    display: inline;
-    left: 180px;
-    height: 100%;
-    max-width: 83%;
-    line-height: 80px;
-    text-align: center;
-    text-shadow: 3px 3px 5px #8e8e8e;
-}
-span.lista1 {
-    font-family: Arial, sans-serif;
-    font-size: 25px;
-    color: #ff3e3e;
-    transition: font-size 3s;
-}
-.lista-cech2:hover .lista-bus {
-    left: 0;
-}
-.lista-cech2:hover .lista1 {
-    font-size: 30px;
-}
-.empty {
-    height:144px;
-}
-
 footer {
   text-align: center;
 }
+.fog {
+    position: absolute;
+    background-color: rgba(64,186,180,0.8);
+    height: 500px;
+    width: 100%;
+    z-index: 2;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 2px #949494;
+    text-align: center;
+    transition: background-color 1s, color 1s, text-shadow 0.5s, visibility 1s;
+}
+.fog > h1 {
+    font-size: 50px;
+    font-family: Arial, sans-serif;
+    line-height: 100px;
+    padding-top: 100px;
+}
+.kontener-mapy:hover .fog {
+    background-color: transparent;
+    color: transparent;
+    text-shadow: none;
+    visibility: hidden;
+}
+form, input, select, textarea {
+    margin:auto;
+    background-color:rgb(248,248,248);
+    color:rgb(94,94,94);
+
+}
+
+div.box6 {
+    margin:auto;
+    width: 400px;
+    background:rgba(64,186,180,0.8);
+    position:relative;
+    top:50px;
+    border:1px solid rgba(64,186,180,0.8);
+    border-radius: 5px;
+
+}
+
+div.box6 h1 {
+    color:rgb(94,94,94);
+    font-size:16px;
+    text-transform:inherit;
+    padding:5px 0 5px 5px;
+    border-bottom:1px solid rgba(64,186,180,0.8);
+    border-top:1px solid rgba(64,186,180,0.8);
+    text-align: center;
+}
+
+div.box6 label {
+    width:100%;
+    display: block;
+    background:rgb(248,248,248);
+    border-top:1px solid rgba(64,186,180,0.8);
+    border-bottom:1px solid rgb(229,229,229);
+    padding:10px 0 10px 0;
+}
+
+div.box6 label span {
+    display: block;
+    color:rgb(94,94,94);
+    font-size:12px;
+    float:left;
+    width:100px;
+    text-align:right;
+    padding:5px 20px 0 0;
+}
+
+div.box6 .wpis {
+    padding:10px 10px;
+    width:250px;
+    background:#ffffff;
+    border-bottom: 1px double rgb(229,229,229);
+    border-top: 1px double rgb(229,229,229);
+    border-left:1px double rgb(229,229,229);
+    border-right:1px double rgb(229,229,229);
+}
+
+div.box6 .wiadomosc {
+    padding:7px 7px;
+    width:250px;
+    background:#ffffff;
+    border-bottom: 1px double rgb(229,229,229);
+    border-top: 1px double rgb(229,229,229);
+    border-left:1px double rgb(229,229,229);
+    border-right:1px double rgb(229,229,229);
+    overflow:hidden;
+    height:150px;
+}
+
+div.box6 .button	{
+    margin:0 0 10px 0;
+    padding:4px 7px;
+    background:rgba(64,186,180,0.8);
+    border:0px;
+    position: relative;
+    top:10px;
+    left:150px;
+    width:100px;
+    border-bottom: 1px double rgb(248,248,248);
+    border-top: 1px double rgb(248,248,248);
+    border-left:1px double rgb(248,248,248);
+    border-right:1px double rgb(248,248,248);
+}
+
+
+
