@@ -9,9 +9,9 @@ header {
     font-style: italic;
     font-weight: bold;
     font-stretch: expanded;
-    background-image: url(../images/logo2.png);
+    background-image: url(../images/logo.jpg);
     background-repeat: no-repeat;
-    background-size: 130px;
+    background-size: 150px;
     background-color: rgb(255,255,255);
     background-position: 10px;
 }
@@ -67,18 +67,18 @@ footer {
 }
 .lokalizacja h1 {
     font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
-    padding: 20px 0px 20px 40px;
+    padding: 20px  20px 40px;
     display: block;
     margin: -30px -30px 10px -30px;
     color: rgb(255,255,255);
     background: rgb(64,186,180);
     text-shadow: 1px 1px 1px rgb(148,148,148);
-    border-radius: 5px 5px 0px 0px;
+    border-radius: 5px 5px 0 0;
     border-bottom:1px solid rgb(57,147,143);
 }
 .lokalizacja label {
     display: block;
-    margin: 0px 0px 5px;
+    margin: 0 0 5px;
 }
 .lokalizacja label>span {
     float: left;
@@ -90,7 +90,7 @@ footer {
     color: rgb(0,5,85);
     height: 30px;
     width: 100%;
-    padding: 0px 0px 0px 10px;
+    padding: 0 0 0 10px;
     margin-top: 2px;
     border: 1px solid rgb(229,229,229);
     background: rgb(251,251,251);
@@ -269,7 +269,7 @@ div.box6 .button	{
     margin:0 0 10px 0;
     padding:4px 7px;
     background:#CC0000;
-    border:0px;
+    border:0;
     position: relative;
     top:10px;
     left:150px;
