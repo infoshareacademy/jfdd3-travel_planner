@@ -250,7 +250,7 @@ body {
 }
 form, input, select, textarea {
     margin:auto;
-    padding:0;
+    padding:9%;
     color:#ffffff;
 }
 
