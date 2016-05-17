@@ -15,16 +15,6 @@ header {
     background-color: rgb(255,255,255);
     background-position: 10px;
 }
-
-main {
-    background-color: white;
-    font-style: italic;
-    font-weight: bold;
-    font-stretch: expanded;
-
-
-}
-
 footer {
     padding-top: 10px;
     height: 50px;
