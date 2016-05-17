@@ -216,6 +216,7 @@ div.box6 {
     position:relative;
     top:50px;
     border:1px solid rgba(64,186,180,0.8);
+    border-radius: 5px;
 
 }
 
