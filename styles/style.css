@@ -1,3 +1,14 @@
+/* global css */
+
+body {
+    margin: 0;
+    font-family: Free Sans, Arial, sans-serif;
+    background: rgb(248,248,248);
+    color: rgb(255,255,255);
+}
+
+/* css for header content */
+
 header {
     padding-top: 80px;
     height: 100px;
@@ -9,6 +20,9 @@ header {
     background-position: center;
     background-position-y: 50px;
 }
+
+/* css for main content */
+
 
 nav {
     background-color: rgb(64,186,180);
@@ -23,11 +37,6 @@ nav {
     right: 0;
 }
 
-.menu {
-
-}
-
-
 .menu li {
     display: inline;
     width: 100%;
@@ -41,26 +50,6 @@ nav {
     text-decoration: none;
     color: #FDFCFB;
     font-style: normal;
-}
-
-body {
-    margin: 0;
-    font-family: Free Sans, Arial, sans-serif;
-    background: rgb(248,248,248);
-}
-
-footer {
-    padding-top: 10px;
-    height: 50px;
-    width: auto;
-    background-color: rgb(64,186,180);
-    font-style: italic;
-    font-weight: bold;
-    font-stretch: expanded;
-    display: block;
-    position: relative;
-    top: 100px;
-    z-index: 3;
 }
 .kontener-mapy {
     position: relative;
@@ -85,7 +74,6 @@ footer {
     padding: 20px 0 20px 40px;
     display: block;
     margin: -30px -30px 10px -30px;
-    color: rgb(255,255,255);
     background: rgb(64,186,180);
     text-shadow: 1px 1px 1px rgb(148,148,148);
     border-radius: 5px 5px 0 0;
@@ -210,6 +198,9 @@ footer {
     text-shadow: none;
     visibility: hidden;
 }
+
+/* css for form contact */
+
 form, input, select, textarea {
     margin:auto;
     background-color:rgb(248,248,248);
@@ -294,10 +285,7 @@ div.box6 .button	{
     border-right:1px double rgb(248,248,248);
 }
 
-
-
-
-/*  FOOTER SETUP  */
+/* css for footer content*/
 
 footer {
     font-family: 'Lato', sans-serif;
@@ -320,10 +308,6 @@ footer {
 .footer-image {
     width: 50%;
     height: 50%;
-}
-
-.footer-copyright {
-    color: #FFFFFF;  /* wywalic po globalnej zmianie fonta i koloru fonta */
 }
 
 footer a {
