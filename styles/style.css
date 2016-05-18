@@ -257,7 +257,7 @@ div.box6 label span {
     padding:5px 20px 0 0;
 }
 
-div.box6 .wpis {
+div.box6 .registration {
     padding:10px 10px;
     width:250px;
     background:#ffffff;
@@ -267,7 +267,7 @@ div.box6 .wpis {
     border-right:1px double rgb(229,229,229);
 }
 
-div.box6 .wiadomosc {
+div.box6 .message {
     padding:7px 7px;
     width:250px;
     background:#ffffff;
