@@ -153,29 +153,6 @@ footer {
 .par-aparat {
     margin-left:14px;
 }
-
-.subscribe-newsletter {
-    height: 110px;
-    width: 299px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url('../images/newsletter.png');
-    background-repeat: no-repeat;
-    margin-top: 50px;
-    margin-bottom: 100px;
-}
-
-.subscribe-newsletter p {
-    font-weight: lighter;
-    font-family: "Century Schoolbook L", serif;
-    font-style: italic;
-    font-stretch: expanded;
-    margin-top: 15px;
-    padding-top: 10px;
-    text-shadow: 0 0 10px black;
-    text-align: center;
-    font-size: 30px;
-}
 .fog {
     position: absolute;
     background-color: rgba(64,186,180,0.8);
