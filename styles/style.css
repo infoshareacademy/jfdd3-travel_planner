@@ -1,20 +1,54 @@
+header {
+    padding-top: 80px;
+    height: 100px;
+    width:auto;
+    background-image: url(../images/logo.jpg);
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-color: rgb(255,255,255);
+    background-position: center;
+    background-position-y: 50px;
+}
+
+nav {
+    background-color: rgb(64,186,180);
+    padding: 1px;
+    margin-bottom: 1%;
+    position: fixed;
+    z-index: 5;
+    color: white;
+    height: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.menu {
+
+}
+
+
+.menu li {
+    display: inline;
+    width: 100%;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #FDFCFB;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     font-family: Free Sans, Arial, sans-serif;
     background: rgb(248,248,248);
 }
-header {
-    height: 150px;
-    width:auto;
-    font-style: italic;
-    font-weight: bold;
-    font-stretch: expanded;
-    background-image: url(../images/logo.jpg);
-    background-repeat: no-repeat;
-    background-size: 150px;
-    background-color: rgb(255,255,255);
-    background-position: 10px;
-}
+
 footer {
     padding-top: 10px;
     height: 50px;
@@ -315,7 +349,7 @@ div.box6 .button	{
     margin:0 0 10px 0;
     padding:4px 7px;
     background:rgba(64,186,180,0.8);
-    border:0px;
+    border:0;
     position: relative;
     top:10px;
     left:150px;
@@ -333,9 +367,10 @@ div.box6 .button	{
 
 footer {
     font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
     text-align: center;
     font-size: 0.75em;
-    text-align: center;
     text-decoration: none;
     /*padding-top: 5px;*/
     height: auto;
@@ -427,7 +462,7 @@ footer li {
 
 
 input:focus {
-    outline: none;
+    /*outline: none;*/
     outline: 2px solid #e8bf2a;
     box-shadow: 0 0 2px #e8bf2a;
 }
@@ -435,8 +470,8 @@ input:focus {
 /*  FOOTER SECTIONS  */
 .section {
     clear: both;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 /*  FOOTER COLUMN SETUP  */
@@ -479,11 +514,11 @@ input:focus {
 /* FOOTER GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
 @media only screen and (max-width: 480px) {
-    .col { margin: 1% 0 1% 0%;}
+    .col { margin: 1% 0 1% 0;}
     .span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
 }
 
 @media only screen and (max-width: 960px) {
-    .col { margin: 1% 0 1% 0%;}
+    .col { margin: 1% 0 1% 0;}
     .span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
 }
