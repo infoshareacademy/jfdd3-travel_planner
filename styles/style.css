@@ -303,15 +303,16 @@ footer li {
 /*  FOOTER SIGN IN FORM  */
 
 
-form {
+#footer-form {
     width: 55%;
     margin: 0 auto;
     font-family: 'Lato', sans-serif;
     color: #FDFCFB;
     text-align: center;
+    background-color: inherit;
 }
 
-.header {
+.header-footer {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -323,13 +324,13 @@ form {
 }
 
 
-.button {
+.button  {
     height: 30px;
     border: none;
 }
 
 
-#email {
+#email-footer {
     width: 75%;
     background: #FDFCFB;
     font-family: inherit;
@@ -397,7 +398,7 @@ input:focus {
     clear:both;
 }
 
-  /*GRID OF THREE  */
+/*GRID OF THREE  */
 .span_3_of_3 {
     width: 98%;
 }
