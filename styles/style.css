@@ -413,3 +413,7 @@ input:focus {
     .span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
 }
 
+@media only screen and (max-width: 960px) {
+    .col { margin: 1% 0 1% 0%;}
+    .span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
