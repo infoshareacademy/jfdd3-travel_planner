@@ -28,10 +28,6 @@ footer {
     top: 100px;
     z-index: 3;
 }
-
-.cl1 {
-    float: left;
-}
 .kontener-mapy {
     position: relative;
     width: 100%;
@@ -158,8 +154,27 @@ footer {
     margin-left:14px;
 }
 
-footer {
-  text-align: center;
+.subscribe-newsletter {
+    height: 110px;
+    width: 299px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../images/newsletter.png');
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.subscribe-newsletter p {
+    font-weight: lighter;
+    font-family: "Century Schoolbook L", serif;
+    font-style: italic;
+    font-stretch: expanded;
+    margin-top: 15px;
+    padding-top: 10px;
+    text-shadow: 0 0 10px black;
+    text-align: center;
+    font-size: 30px;
 }
 .fog {
     position: absolute;
@@ -270,3 +285,161 @@ div.box6 .button	{
 
 
 
+
+/*  FOOTER SETUP  */
+
+footer {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 0.75em;
+    text-align: center;
+    text-decoration: none;
+    /*padding-top: 5px;*/
+    height: auto;
+    width: auto;
+    background-color: rgb(64,186,180);
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right:0;
+    clear: both;
+}
+
+.footer-image {
+    width: 50%;
+    height: 50%;
+}
+
+.footer-copyright {
+    color: #FFFFFF;  /* wywalic po globalnej zmianie fonta i koloru fonta */
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer li {
+    list-style: none;
+}
+
+/*  FOOTER SIGN IN FORM  */
+
+
+form {
+    width: 55%;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    color: #FDFCFB;
+    text-align: center;
+}
+
+.header {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+}
+
+
+.button {
+    height: 30px;
+    border: none;
+}
+
+
+#email {
+    width: 75%;
+    background: #FDFCFB;
+    font-family: inherit;
+    color: #737373;
+    letter-spacing: 1px;
+    text-indent: 5%;
+    border-radius: 5px 0 0 5px;
+}
+
+
+#submit {
+    width: 40%;
+    height: 32px;
+    background: #e8bf2a;
+    font-family: inherit;
+    font-weight: bold;
+    color: inherit;
+    letter-spacing: 1px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+}
+
+
+#submit:hover {
+    background: #d4a21f;
+}
+
+
+input:focus {
+    outline: none;
+    outline: 2px solid #e8bf2a;
+    box-shadow: 0 0 2px #e8bf2a;
+}
+
+/*  FOOTER SECTIONS  */
+.section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*  FOOTER COLUMN SETUP  */
+.col {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child {
+    margin-left: 0;
+}
+
+.socialmedia {
+    display: inline-flex;
+}
+
+/* FOOTER GROUPING  */
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+
+  /*GRID OF THREE  */
+.span_3_of_3 {
+    width: 98%;
+}
+.span_2_of_3 {
+    width: 48%;
+    margin-top: 40px;
+}
+.span_1_of_3 {
+    width: 48%;
+}
+
+/* FOOTER GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+    .col { margin: 1% 0 1% 0%;}
+    .span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
+
+@media only screen and (max-width: 960px) {
+    .col { margin: 1% 0 1% 0%;}
+    .span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
