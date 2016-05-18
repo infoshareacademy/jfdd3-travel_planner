@@ -51,6 +51,30 @@ nav {
     color: #FDFCFB;
     font-style: normal;
 }
+
+.menu a:hover {
+    color: #e8bf2a;
+}
+
+body {
+    margin: 0;
+    font-family: Free Sans, Arial, sans-serif;
+    background: rgb(248,248,248);
+}
+
+footer {
+    padding-top: 10px;
+    height: 50px;
+    width: auto;
+    background-color: rgb(64,186,180);
+    font-style: italic;
+    font-weight: bold;
+    font-stretch: expanded;
+    display: block;
+    position: relative;
+    top: 100px;
+    z-index: 3;
+}
 .kontener-mapy {
     position: relative;
     width: 100%;
@@ -353,7 +377,10 @@ div.box6 .button	{
     border-right:1px double rgb(248,248,248);
 }
 
-/* css for footer content*/
+
+
+
+/*  FOOTER SETUP  */
 
 footer {
     font-family: 'Lato', sans-serif;
