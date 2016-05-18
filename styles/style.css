@@ -151,21 +151,25 @@ footer {
 .par-aparat {
     margin-left:14px;
 }
+.o-nas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
 .o-nas-1 {
-    width:100%;
+    width:50%;
     display: flex;
     flex-wrap: wrap;
-    border-top:1px dotted black;
-    background-image: url("../images/pan_gda.jpg");
-    background-size: cover;
-    background-color: #FFFFFF;
-    background-blend-mode: luminosity, normal;
 }
 .o-nas-2 {
+    width:50%;
+    margin-left:20px;
+
+}
+.o-nas-3 {
     max-width:264px;
     height:361px;
-    margin-left:4%;
 }
 .o-nas-image {
     border-radius:50%;
@@ -175,10 +179,13 @@ footer {
     margin-left:78px;
 }
 .o-nas-footer {
-    background-color: rgb(248,248,248);
+    background-color:rgb(64,186,180);
+    color: #FFFFFF;
+    text-shadow: 2px 2px 2px #949494;
     border-radius:5px;
     width:250px;
     margin-left:11px;
+    padding:10px;
 
 }
 .o-nas-h2 {
