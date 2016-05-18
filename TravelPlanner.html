@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Planner</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="zegar">
+            <div class="bigbox">
+                <p>Do końca pierwszego sprintu pozostało dni:</p>
+            </div>
+            <div class="bigbox">
+                <div class="box"><h1 id="dni"></h1></div>
+                <div class="box2"><p>DNI</p></div>
+            </div>
+            <div class="bigbox">
+                <div class="box"><h1 id="godz"></h1></div>
+                <div class="box2"><p>GODZ</p></div>
+            </div>
+            <div class="bigbox">
+                <div class="box"><h1 id="min"></h1></div>
+                <div class="box2"><p>MIN</p></div>
+            </div>
+            <div class="bigbox">
+                <div class="box"><h1 id="sek"></h1></div>
+                <div class="box2"><p>SEK</p></div>
+            </div>
+        </div>
+        <script>
+            licz();
+            function licz() {
+                var data = new Date();
+                var data2 = new Date(2016, 4, 20, 17);
+                var roznica = (data2 - data)/ 86400000;
+                if (roznica < 0) {
+                    document.getElementById("dni").innerHTML = '--';
+                    document.getElementById("godz").innerHTML = '--';
+                    document.getElementById("min").innerHTML = '--';
+                    document.getElementById("sek").innerHTML = '--';
+                }
+                else {
+                    var dni = Math.floor(roznica);
+                    roznica = 24 * (roznica - dni);
+                    var godz = Math.floor(roznica);
+                    roznica = 60 * (roznica - godz);
+                    var min = Math.floor(roznica);
+                    var sek = Math.round(60 * (roznica - min));
+                    if (sek == 60) {sek = 0; min++;}
+                    if (min == 60) {min = 0;godz++;}
+                    if (godz == 24) {godz = 0;dni++;}
+                    document.getElementById("dni").innerHTML = dni;
+                    document.getElementById("godz").innerHTML = godz;
+                    document.getElementById("min").innerHTML = min;
+                    document.getElementById("sek").innerHTML = sek;
+                    setTimeout(licz, 1000);
+                }
+            }
+        </script>
+    </header>
+
+    <div class="kontener-mapy">
+
+        <form action="" class="lokalizacja">
+            <h1>Zaplanuj swoją podróż.</h1>
+            <label>
+                <span>Skąd jedziesz?</span>
+                <input type="text" name="adres" placeholder="Wpisz adres początkowy">
+            </label>
+            <br><br>
+            <label>
+                <span>Co chciałbyś zobaczyć?</span>
+                <input type="text" name="adres" placeholder="Wpisz adres końcowy lub nazwę zabytku">
+            </label>
+            <br><br>
+            <input type="submit" value="Zatwierdź">
+        </form>
+
+        <img src="images/map9.png" alt="mapa" class="mapa">
+        <img src="images/zuraw_gdanski.jpg" alt="zuraw" class="zur-gda">
+        <img src="images/fontanna_neptuna.jpg" alt="fontanna" class="fon-nep">
+        <img src="images/dom_uphagena.jpg" alt="dom" class="dom-uph">
+        <img src="images/brama_wyzynna.jpg" alt="brama" class="brama-wyz">
+
+    </div>
+
+    <div class="wykaz-funkcji">
+        <div class="wykaz">
+            <img src="images/ikony/128kb/pin-8.png" alt="ikona" class="ikona">
+            <p>
+                Będziesz mógł znaleźć swoją lokalizację na mapie jednym przyciskiem myszy
+                lub wpisać adres,który Cie interesuje, a my pokażemy Ci gdzie to miejsce się znajduje.
+            </p>
+        </div>
+        <div class="wykaz">
+            <img src="images/ikony/128kb/camera-1.png" alt="ikona" class="ikona">
+            <p class="par-aparat">
+                Planując swoją podróż, będziesz miał możliwość dowiedzieć się czegoś więcej
+                o naszych zabytkach. Klikając w naszą ikonkę, poznasz jego historię i różne ciekawostki
+                z nim związane.
+            </p>
+        </div>
+        <div class="wykaz">
+            <img src="images/ikony/128kb/bus.png" alt="ikona" class="ikona">
+            <p>
+                Pokażemy Ci, gdzie znajduje się najbliższy punkt komunikacji miejskiej
+                i wyświetlimy aktualny rozkład jazdy.
+            </p>
+        </div>
+        <div class="wykaz">
+            <img src="images/ikony/128kb/restaurant.png" alt="ikona" class="ikona">
+            <p>
+                Pokażemy Ci punkty gastronomiczne, w których, w trakcie zwiedzania, będziesz mógł
+                coś zjeść lub napić się kawy.
+            </p>
+        </div>
+        <div class="wykaz">
+            <img src="images/ikony/128kb/train.png" alt="ikona" class="ikona">
+            <p>
+                Będziesz mógł odwiedzić tyle miejsc, ile tylko zapragniesz, a my postaramy się,
+                abyś dotarł tam w jak najkrótszym czasie.
+            </p>
+        </div>
+        <div class="wykaz">
+            <img src="images/ikony/128kb/pin-1.png" alt="ikona" class="ikona">
+            <p>
+                Zaznaczymy też punkty, które sprawią, że będziesz czuł się bezpieczniej i w razie
+                potrzeby, szybko do nich dotarł.
+            </p>
+        </div>
+    </div>
+
+    <div class="o-nas-1">
+        <div class="o-nas-2">
+            <img src="images/baszta_slomiana.jpg" alt="zdjęcie" class="o-nas-image">
+            <div class="o-nas-footer">
+                <h2 class="o-nas-h2">Karina</h2>
+                <p>
+                    dhgdkljkn jk kbk kb kjbkjbkjbj jb kjbkb abkb akb bb kb bkb kb kbafbbfyhg g v
+                     jak g a lglyuggygag g gl agygyugyukgyukgyug gl ggligl g.
+                </p>
+            </div>
+        </div>
+
+        <div class="o-nas-2">
+            <img src="images/katedra_oliwska.jpg" alt="zdjęcie" class="o-nas-image">
+            <div class="o-nas-footer">
+                <h2 class="o-nas-h2">Karina</h2>
+                <p>
+                iheibhwefbuire bufbewibu ibfwiub iunw i iu u jhruuhhiuhwhu iwihi iuht iwi
+                 wkjei iiuwb i iuhwiuhruiuhwr iwjiii ihwiiiiiiurw
+                </p>
+            </div>
+        </div>
+
+        <div class="o-nas-2">
+            <img src="images/twierdza_wisloujscie.jpg" alt="zdjęcie" class="o-nas-image" width="800" height="600">
+            <div class="o-nas-footer">
+                <h2 class="o-nas-h2">Karina</h2>
+                <p>
+                    iheibhwefbuire bufbewibu ibfwiub iunw i iu u jhruuhhiuhwhu iwihi iuht iwi
+                    wkjei iiuwb i iuhwiuhruiuhwr iwjiii ihwiiiiiiurw
+                </p>
+            </div>
+        </div>
+
+        <div class="o-nas-2">
+            <img src="images/katedra_oliwska.jpg" alt="zdjęcie" class="o-nas-image">
+            <div class="o-nas-footer">
+                <h2 class="o-nas-h2">Karina</h2>
+                <p>
+                    iheibhwefbuire bufbewibu ibfwiub iunw i iu u jhruuhhiuhwhu iwihi iuht iwi
+                    wkjei iiuwb i iuhwiuhruiuhwr iwjiii ihwiiiiiiurw
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="clear-o-nas"></div>
+
+
+    <footer>Design by: Niewyspani&reg;
+    </footer>
+</body>
+</html>
