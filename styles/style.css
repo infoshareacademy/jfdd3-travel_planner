@@ -171,24 +171,15 @@ nav {
     justify-content: center;
     display: flex;
 }
-.par-aparat {
-    margin-left:14px;
-}
 .o-nas {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
 }
-
 .o-nas-1 {
     width:50%;
     display: flex;
     flex-wrap: wrap;
-}
-.o-nas-2 {
-    width:50%;
-    margin-left:20px;
-
+    justify-content: space-around;
 }
 .o-nas-3 {
     max-width:264px;
@@ -196,10 +187,20 @@ nav {
 }
 .o-nas-image {
     border-radius:50%;
-    width:45%;
     height:35%;
-    margin-top:50px;
-    margin-left:78px;
+    margin-top:25%;
+}
+.image-karina {
+    margin-left: 41%;
+}
+.image-lukasz {
+    margin-left: 37%;
+}
+.image-krzysztof {
+    margin-left: 45%;
+}
+.image-radek {
+    margin-left: 41%;
 }
 .o-nas-footer {
     background-color:rgb(64,186,180);
@@ -215,7 +216,7 @@ nav {
     text-align: center;
 }
 .clear-o-nas {
-    height:20px;
+    height:70px;
 }
 .subscribe-newsletter {
     height: 110px;
