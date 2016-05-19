@@ -7,7 +7,7 @@ body {
     color: rgb(255,255,255);
 }
 
-/* css for header content */
+/* css for menu content */
 
 header {
     padding-top: 50px;
@@ -20,9 +20,6 @@ header {
     background-position: center;
     background-position-y: 40px;
 }
-
-/* css for menu */
-
 nav {
     background-color: rgb(64,186,180);
     padding: 1px;
@@ -63,31 +60,12 @@ nav {
 
 /* css for main content*/
 
-body {
-    margin: 0;
-    font-family: Free Sans, Arial, sans-serif;
-    background: rgb(248,248,248);
-}
-
-footer {
-    padding-top: 10px;
-    height: 50px;
-    width: auto;
-    background-color: rgb(64,186,180);
-    font-style: italic;
-    font-weight: bold;
-    font-stretch: expanded;
-    display: block;
-    position: relative;
-    top: 100px;
-    z-index: 3;
-}
-.kontener-mapy {
+.container-map {
     position: relative;
     width: 100%;
     height: 500px;
 }
-.lokalizacja {
+.trip-planner {
     position: absolute;
     top:2%;
     left:1%;
@@ -97,10 +75,10 @@ footer {
     background: rgb(248,248,248);
     padding: 30px 30px 20px 30px;
     font: 12px Arial, Helvetica, sans-serif;
-    color: rgb(0,6,102);
+    color: white;
     border-radius: 5px;
 }
-.lokalizacja h1 {
+.trip-planner h1 {
     font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
     padding: 20px 0 20px 40px;
     display: block;
@@ -110,17 +88,17 @@ footer {
     border-radius: 5px 5px 0 0;
     border-bottom:1px solid rgb(57,147,143);
 }
-.lokalizacja label {
+.trip-planner label {
     display: block;
     margin: 0 0 5px;
 }
-.lokalizacja label>span {
+.trip-planner label>span {
     float: left;
     margin-top: 10px;
     margin-left: 10px;
     color: rgb(94,94,94);
 }
-.lokalizacja input[type="text"] {
+.trip-planner input[type="text"] {
     color: rgb(0,5,85);
     height: 30px;
     width: 100%;
@@ -132,7 +110,7 @@ footer {
     box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
     font: normal 14px/14px Arial, Helvetica, sans-serif;
 }
-.lokalizacja input[type="submit"] {
+.trip-planner input[type="submit"] {
     background-color: rgb(64,186,180);
     border-radius: 5px;
     border: none;
@@ -140,7 +118,7 @@ footer {
     color: #FFF;
     text-shadow: 1px 1px 1px #949494;
 }
-.lokalizacja input[type="submit"]:hover {
+.trip-planner input[type="submit"]:hover {
     background-color:rgb(69,142,139);
 }
 .mapa {
@@ -188,35 +166,38 @@ footer {
     border-radius: 10%;
     box-shadow: 5px 5px 13px -6px;
 }
-.wykaz-funkcji {
+.container-product-info {
     display: flex;
     flex-wrap: wrap;
     width:100%;
     background-color: rgb(248,248,248);
     color: #000;
 }
-.wykaz {
+.spacer {
+    height: 50px;
+}
+.product-info {
     width:460px;
     margin-top:39px;
     margin-left:132px;
     justify-content: center;
     display: flex;
 }
-.o-nas {
+.about-us {
     display: flex;
     flex-wrap: wrap;
 }
-.o-nas-1 {
+.about-us-1 {
     width:50%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.o-nas-3 {
+.about-us-3 {
     max-width:264px;
     height:361px;
 }
-.o-nas-image {
+.about-us-image {
     border-radius:50%;
     height:35%;
     margin-top:25%;
@@ -233,7 +214,7 @@ footer {
 .image-radek {
     margin-left: 41%;
 }
-.o-nas-footer {
+.about-us-text {
     background-color:rgb(64,186,180);
     color: #FFFFFF;
     text-shadow: 2px 2px 2px #949494;
@@ -243,10 +224,16 @@ footer {
     padding:10px;
 
 }
-.o-nas-h2 {
+.about-us-h2 {
     text-align: center;
 }
-.clear-o-nas {
+.about-us-text span {
+   font-weight: bold;
+}
+.about-us-text p {
+    text-align: justify;
+}
+.clear-about-us {
     height:70px;
 }
 .subscribe-newsletter {
@@ -291,7 +278,7 @@ footer {
     line-height: 100px;
     padding-top: 100px;
 }
-.kontener-mapy:hover .fog {
+.container-map:hover .fog {
     background-color: transparent;
     color: transparent;
     text-shadow: none;
@@ -307,7 +294,7 @@ form, input, select, textarea {
 
 }
 
-div.box6 {
+div.form-contact-box {
     margin:auto;
     width: 400px;
     background:rgba(64,186,180,0.8);
@@ -318,7 +305,7 @@ div.box6 {
 
 }
 
-div.box6 h1 {
+div.form-contact-box h1 {
     color:rgb(94,94,94);
     font-size:16px;
     text-transform:inherit;
@@ -328,7 +315,7 @@ div.box6 h1 {
     text-align: center;
 }
 
-div.box6 label {
+div.form-contact-box label {
     width:100%;
     display: block;
     background:rgb(248,248,248);
@@ -337,7 +324,7 @@ div.box6 label {
     padding:10px 0 10px 0;
 }
 
-div.box6 label span {
+div.form-contact-box label span {
     display: block;
     color:rgb(94,94,94);
     font-size:12px;
@@ -347,7 +334,7 @@ div.box6 label span {
     padding:5px 20px 0 0;
 }
 
-div.box6 .wpis {
+div.form-contact-box .wpis {
     padding:10px 10px;
     width:250px;
     background:#ffffff;
@@ -357,7 +344,7 @@ div.box6 .wpis {
     border-right:1px double rgb(229,229,229);
 }
 
-div.box6 .wiadomosc {
+div.form-contact-box .wiadomosc {
     padding:7px 7px;
     width:250px;
     background:#ffffff;
@@ -369,7 +356,7 @@ div.box6 .wiadomosc {
     height:150px;
 }
 
-div.box6 .button	{
+div.form-contact-box .button	{
     margin:0 0 10px 0;
     padding:4px 7px;
     background:rgba(64,186,180,0.8);
