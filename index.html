@@ -8,17 +8,17 @@
 
 </head>
 <body>
-    <header>
-        <nav>
-            <div class = "menu">
-                <ul>
-                    <li><a href ="">O nas &bull;</a></li>
-                    <li><a href="">O produkcie &bull;</a> </li>
-                    <li><a href="">Kontakt</a> </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+<nav>
+    <ul class="navigation">
+        <li class="nav-item"><a href="#top">START</a></li>
+        <li class="nav-item"><a href ="#onas">O NAS</a></li>
+        <li class="nav-item"><a href="#produkt">PRODUKT</a> </li>
+        <li class="nav-item"><a href="#onas">KONTAKT</a> </li>
+    </ul>
+</nav>
+<header id="top">
+    &nbsp;
+</header>
 <main>
     <div class="kontener-mapy">
         <div class="fog"><h1>
@@ -46,7 +46,7 @@
         <img src="images/brama_wyzynna.jpg" alt="brama" class="brama-wyz">
     </div>
 
-    <div class="wykaz-funkcji">
+    <div class="wykaz-funkcji" id="produkt">
         <div class="wykaz">
             <img src="images/ikony/128kb/pin-8.png" alt="ikona" class="">
             <p>
@@ -93,7 +93,7 @@
     </div>
 
 
-    <div class="o-nas">
+    <div class="o-nas" id="onas">
         <div class="o-nas-1">
             <div class="0-nas-2">
                 <div class="o-nas-3">
@@ -192,5 +192,7 @@
             </div>
         </div>
     </footer>
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

@@ -10,19 +10,18 @@ body {
 /* css for header content */
 
 header {
-    padding-top: 80px;
-    height: 100px;
-    width:auto;
+    padding-top: 50px;
+    height: 110px;
+    width:100%;
     background-image: url(../images/logo.jpg);
     background-repeat: no-repeat;
     background-size: 150px;
     background-color: rgb(255,255,255);
     background-position: center;
-    background-position-y: 50px;
+    background-position-y: 40px;
 }
 
-/* css for main content */
-
+/* css for menu */
 
 nav {
     background-color: rgb(64,186,180);
@@ -32,24 +31,56 @@ nav {
     z-index: 5;
     color: white;
     height: 50px;
+    width: 100%;
     top: 0;
     left: 0;
     right: 0;
+    text-align: center;
 }
 
-.menu li {
+.nav-item {
     display: inline;
     width: 100%;
 }
 
-.menu ul {
+.navigation {
     list-style: none;
 }
 
-.menu a {
+.navigation a {
+    padding-top: 3px;
+    padding-right: 20px;
+    padding-bottom: 3px;
+    padding-left: 20px;
     text-decoration: none;
     color: #FDFCFB;
     font-style: normal;
+}
+
+.navigation a:hover {
+    color: #e8bf2a;
+}
+
+/* css for main content*/
+
+body {
+    margin: 0;
+    font-family: Free Sans, Arial, sans-serif;
+    background: rgb(248,248,248);
+}
+
+footer {
+    padding-top: 10px;
+    height: 50px;
+    width: auto;
+    background-color: rgb(64,186,180);
+    font-style: italic;
+    font-weight: bold;
+    font-stretch: expanded;
+    display: block;
+    position: relative;
+    top: 100px;
+    z-index: 3;
 }
 .kontener-mapy {
     position: relative;
@@ -353,7 +384,10 @@ div.box6 .button	{
     border-right:1px double rgb(248,248,248);
 }
 
-/* css for footer content*/
+
+
+
+/*  FOOTER SETUP  */
 
 footer {
     font-family: 'Lato', sans-serif;
