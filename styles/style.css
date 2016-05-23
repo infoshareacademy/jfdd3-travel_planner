@@ -46,10 +46,7 @@ nav {
 }
 
 .navigation a {
-    padding-top: 3px;
-    padding-right: 20px;
-    padding-bottom: 3px;
-    padding-left: 20px;
+    padding: 3px 20px;
     text-decoration: none;
     color: #FDFCFB;
     font-style: normal;
@@ -70,6 +67,7 @@ nav {
     width: 100%;
     height: 500px;
 }
+
 .trip-planner {
     position: absolute;
     top:2%;
@@ -83,6 +81,7 @@ nav {
     color: white;
     border-radius: 5px;
 }
+
 .trip-planner h1 {
     font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
     padding: 20px 0 20px 40px;
@@ -93,16 +92,19 @@ nav {
     border-radius: 5px 5px 0 0;
     border-bottom:1px solid rgb(57,147,143);
 }
+
 .trip-planner label {
     display: block;
     margin: 0 0 5px;
 }
+
 .trip-planner label>span {
     float: left;
     margin-top: 10px;
     margin-left: 10px;
     color: rgb(94,94,94);
 }
+
 .trip-planner input[type="text"] {
     color: rgb(0,5,85);
     height: 30px;
@@ -115,6 +117,7 @@ nav {
     box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
     font: normal 14px/14px Arial, Helvetica, sans-serif;
 }
+
 .trip-planner input[type="submit"] {
     background-color: rgb(64,186,180);
     border-radius: 5px;
@@ -123,14 +126,17 @@ nav {
     color: #FFF;
     text-shadow: 1px 1px 1px #949494;
 }
+
 .trip-planner input[type="submit"]:hover {
     background-color:rgb(69,142,139);
 }
+
 .mapa {
     position: absolute;
     width: 100%;
     height:100%;
 }
+
 .zur-gda, .brama-wyz, .fon-nep, .dom-uph {
     position: absolute;
     border:1px solid black;
@@ -151,18 +157,21 @@ nav {
     width:7%;
     max-height: 30%;
 }
+
 .fon-nep {
     top:58%;
     left:67%;
     width:6%;
     max-height: 22%;
 }
+
 .dom-uph {
     top:40%;
     left:43%;
     width:7%;
     max-height: 30%;
 }
+
 .container-product-info {
     display: flex;
     flex-wrap: wrap;
@@ -170,9 +179,11 @@ nav {
     background-color: rgb(248,248,248);
     color: #000;
 }
+
 .spacer {
     height: 50px;
 }
+
 .product-info {
     width:460px;
     margin-top:39px;
@@ -180,6 +191,7 @@ nav {
     justify-content: center;
     display: flex;
 }
+
 .about-us-and-contact-form {
     display: flex;
     flex-wrap: wrap;
@@ -246,7 +258,28 @@ nav {
     height:170px;
 }
 
+.subscribe-newsletter {
+    height: 110px;
+    width: 299px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../images/newsletter.png');
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
 
+.subscribe-newsletter p {
+    font-weight: lighter;
+    font-family: "Century Schoolbook L", serif;
+    font-style: italic;
+    font-stretch: expanded;
+    margin-top: 15px;
+    padding-top: 10px;
+    text-shadow: 0 0 10px black;
+    text-align: center;
+    font-size: 30px;
+}
 .fog-on-map {
     position: absolute;
     background-color: rgba(64,186,180,0.8);
@@ -258,12 +291,14 @@ nav {
     text-align: center;
     transition: background-color 1s, color 1s, text-shadow 0.5s, visibility 1s;
 }
+
 .fog-on-map > h1 {
     font-size: 50px;
     font-family: Arial, sans-serif;
     line-height: 100px;
     padding-top: 100px;
 }
+
 .container-map:hover .fog-on-map {
     background-color: transparent;
     color: transparent;
@@ -272,15 +307,18 @@ nav {
 }
 
 
+form, input, select, textarea {
+    margin:auto;
+    background-color:rgb(248,248,248);
+    color:rgb(94,94,94);
 
-/* CONTACT FORM SETUP */
+}
 
 .containter-about-us {
 
     height: 100px;
     background:rgba(64,186,180,1);
 }
-
 
 
 #footer-form {
@@ -305,12 +343,10 @@ nav {
     align-items: center;
 }
 
-
 .button  {
     height: 30px;
     border: none;
 }
-
 
 #email-footer {
     width: 75%;
@@ -321,7 +357,6 @@ nav {
     text-indent: 5%;
     border-radius: 5px 0 0 5px;
 }
-
 
 #submit {
     width: 40%;
@@ -336,11 +371,9 @@ nav {
     transition: background .3s ease-in-out;
 }
 
-
 #submit:hover {
     background: #d4a21f;
 }
-
 
 input:focus {
     /*outline: none;*/
@@ -414,6 +447,7 @@ footer li {
     content:"";
     display:table;
 }
+
 .group:after {
     clear:both;
 }
@@ -422,10 +456,12 @@ footer li {
 .span_3_of_3 {
     width: 98%;
 }
+
 .span_2_of_3 {
     width: 64%;
 
 }
+
 .span_1_of_3 {
     width: 48%;
 }
