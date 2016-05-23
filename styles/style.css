@@ -58,6 +58,10 @@ nav {
     color: #e8bf2a;
 }
 
+.navigation-active {
+    color: #e8bf2a !important; /*leave it as important until inheritance is resolved */
+}
+
 /* css for main content*/
 
 .container-map {

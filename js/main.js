@@ -1,5 +1,23 @@
 //function for scrolling page to desired div element
 
+// $(function() {
+//     $('a[href*="#"]:not([href="#"])').click(function() {
+//         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+//             var target = $(this.hash);
+//             target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+//             if (target.length) {
+//                 $('html, body').animate({
+//                     scrollTop: target.offset().top
+//                 }, 1000,'swing',function() {
+//                     window.location.hash = target;
+//                     $(document).on("scroll", onScroll);
+//                 });
+//                 return false;
+//             }
+//         }
+//     });
+// });
+
 
 
 // set on function with event triggering onScroll function
@@ -13,16 +31,16 @@ $(document).ready(function() {
      to clicked a tag
      */
     $('a[href^="#"]').on('click', function (e) {
-        e.preventDefault(); //why this????
+        e.preventDefault(); //prevent page reload on click event
         $(document).off("scroll");
 
-        //find all a tags with nav-link class and remove from them active active
+        //find all a tags with nav-link class and remove from them class active
         $(this).hasClass('nav-link') ? $('a').each(function() {
-            $(this).removeClass('active');
+            $(this).removeClass('navigation-active');
         }) : '' ;
 
         //for this item if nav-link is present add new class active
-        $(this).hasClass('nav-link') ? $(this).addClass('active') : '' ;
+        $(this).hasClass('nav-link') ? $(this).addClass('navigation-active') : '' ;
         console.log('link clicked');
         var target = this.hash;
         menu = target;
@@ -34,23 +52,37 @@ $(document).ready(function() {
             $(document).on("scroll", onScroll);
         });
     });
+
+
+    // TODO opis wymagany
+    function onScroll(){
+        var scrollPos = $(document).scrollTop();
+
+        // $(function() {
+        //
+        //     $('.top').appear().on('appear', function () {
+        //         console.log($(this).addClass(''));
+        //     });
+        // });
+
+        $('a').each(function () {
+            var currLink = $(this);
+            var refElement = $(currLink.attr("href"));
+            if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                $('a').removeClass("navigation-active");
+                currLink.addClass("navigation-active");
+            }
+            else{
+                currLink.removeClass("navigation-active");
+            }
+        });
+    }
+
 });
 
-// TODO opis wymagany
-function onScroll(){
-    var scrollPos = $(document).scrollTop();
-    $('a').each(function () {
-        var currLink = $(this);
-        var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('a').removeClass("active");
-            currLink.addClass("active");
-        }
-        else{
-            currLink.removeClass("active");
-        }
-    });
-}
+
+
+
 
 
 
