@@ -1,23 +1,5 @@
 //function for scrolling page to desired div element
 
-// $(function() {
-//     $('a[href*="#"]:not([href="#"])').click(function() {
-//         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-//             var target = $(this.hash);
-//             target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-//             if (target.length) {
-//                 $('html, body').animate({
-//                     scrollTop: target.offset().top
-//                 }, 1000,'swing',function() {
-//                     window.location.hash = target;
-//                     $(document).on("scroll", onScroll);
-//                 });
-//                 return false;
-//             }
-//         }
-//     });
-// });
-
 
 
 // set on function with event triggering onScroll function
@@ -34,12 +16,10 @@ $(document).ready(function() {
         e.preventDefault(); //why this????
         $(document).off("scroll");
 
-        //find all a tags with nav-link class and remove from them class active
+        //find all a tags with nav-link class and remove from them active active
         $(this).hasClass('nav-link') ? $('a').each(function() {
             $(this).removeClass('active');
         }) : '' ;
-
-
 
         //for this item if nav-link is present add new class active
         $(this).hasClass('nav-link') ? $(this).addClass('active') : '' ;
