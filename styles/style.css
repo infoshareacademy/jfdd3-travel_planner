@@ -198,7 +198,7 @@ nav {
 }
 
 .about-us-main-container {
-    width:50%;
+    width:100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -258,28 +258,7 @@ nav {
     height:170px;
 }
 
-.subscribe-newsletter {
-    height: 110px;
-    width: 299px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url('../images/newsletter.png');
-    background-repeat: no-repeat;
-    margin-top: 50px;
-    margin-bottom: 100px;
-}
 
-.subscribe-newsletter p {
-    font-weight: lighter;
-    font-family: "Century Schoolbook L", serif;
-    font-style: italic;
-    font-stretch: expanded;
-    margin-top: 15px;
-    padding-top: 10px;
-    text-shadow: 0 0 10px black;
-    text-align: center;
-    font-size: 30px;
-}
 .fog-on-map {
     position: absolute;
     background-color: rgba(64,186,180,0.8);
@@ -315,13 +294,14 @@ form, input, select, textarea {
 }
 
 .containter-about-us {
-
-    height: 100px;
+    margin-top: 40px;
+    height: 150px;
     background:rgba(64,186,180,1);
 }
 
 
 #footer-form {
+    padding-top: 10px;
     width: 45%;
     margin: 0 auto;
     font-family: 'Lato', sans-serif;
