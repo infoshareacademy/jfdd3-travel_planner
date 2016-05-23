@@ -187,13 +187,13 @@ nav {
     display: flex;
     flex-wrap: wrap;
 }
-.about-us-1 {
+.about-us-main-container {
     width:50%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.about-us-3 {
+.about-us-sub-sub-personal-container {
     max-width:264px;
     height:361px;
 }
