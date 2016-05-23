@@ -13,11 +13,8 @@ header {
     padding-top: 50px;
     height: 110px;
     width:100%;
-    background-image: url(../images/logo.jpg);
-    background-repeat: no-repeat;
     background-size: 150px;
-    background-color: rgb(255,255,255);
-    background-position: center;
+    background: rgb(255, 255, 255) url(../images/logo.jpg) no-repeat center;
     background-position-y: 40px;
 }
 nav {
@@ -45,10 +42,7 @@ nav {
 }
 
 .navigation a {
-    padding-top: 3px;
-    padding-right: 20px;
-    padding-bottom: 3px;
-    padding-left: 20px;
+    padding: 3px 20px;
     text-decoration: none;
     color: #FDFCFB;
     font-style: normal;
@@ -244,12 +238,8 @@ nav {
 .subscribe-newsletter {
     height: 110px;
     width: 299px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url('../images/newsletter.png');
-    background-repeat: no-repeat;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    background: url('../images/newsletter.png') no-repeat;
+    margin: 50px auto 100px;
 }
 
 .subscribe-newsletter p {
@@ -340,20 +330,14 @@ div.form-contact-box .inscription {
     padding:10px 10px;
     width:250px;
     background:#ffffff;
-    border-bottom: 1px double rgb(229,229,229);
-    border-top: 1px double rgb(229,229,229);
-    border-left:1px double rgb(229,229,229);
-    border-right:1px double rgb(229,229,229);
+    border: 1px double rgb(229, 229, 229);
 }
 
 div.form-contact-box .message {
     padding:7px 7px;
     width:250px;
     background:#ffffff;
-    border-bottom: 1px double rgb(229,229,229);
-    border-top: 1px double rgb(229,229,229);
-    border-left:1px double rgb(229,229,229);
-    border-right:1px double rgb(229,229,229);
+    border: 1px double rgb(229, 229, 229);
     overflow:hidden;
     height:150px;
 }
@@ -362,15 +346,11 @@ div.form-contact-box .button	{
     margin:0 0 10px 0;
     padding:4px 7px;
     background:rgba(64,186,180,0.8);
-    border: 0;
     position: relative;
     top:10px;
     left:150px;
     width:100px;
-    border-bottom: 1px double rgb(248,248,248);
-    border-top: 1px double rgb(248,248,248);
-    border-left:1px double rgb(248,248,248);
-    border-right:1px double rgb(248,248,248);
+    border: 1px double rgb(248, 248, 248);
 }
 
 
