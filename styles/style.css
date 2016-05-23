@@ -258,7 +258,7 @@ nav {
     text-align: center;
     font-size: 30px;
 }
-.fog {
+.fog-on-map {
     position: absolute;
     background-color: rgba(64,186,180,0.8);
     height: 500px;
@@ -269,13 +269,13 @@ nav {
     text-align: center;
     transition: background-color 1s, color 1s, text-shadow 0.5s, visibility 1s;
 }
-.fog > h1 {
+.fog-on-map > h1 {
     font-size: 50px;
     font-family: Arial, sans-serif;
     line-height: 100px;
     padding-top: 100px;
 }
-.container-map:hover .fog {
+.container-map:hover .fog-on-map {
     background-color: transparent;
     color: transparent;
     text-shadow: none;
@@ -341,7 +341,7 @@ div.form-contact-box .wpis {
     border-right:1px double rgb(229,229,229);
 }
 
-div.form-contact-box .wiadomosc {
+div.form-contact-box .message {
     padding:7px 7px;
     width:250px;
     background:#ffffff;
