@@ -20,8 +20,7 @@
 
 
 
-//
-
+// set on function with event triggering onScroll function
 $(document).ready(function() {
     // $(window).scroll(function() {
     //   var window_top = $(window).scrollTop();
@@ -57,7 +56,7 @@ $(document).ready(function() {
     });
 });
 
-// TODO rozumiesz wiec opisz
+// TODO opis wymagany
 function onScroll(event){
     var scrollPos = $(document).scrollTop();
     $('#sidebar a').each(function () {
