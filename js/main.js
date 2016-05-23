@@ -31,13 +31,6 @@ function showCursorPos(e) {
     return y;
 }
 
-
-
-
-
-
-
-
 $(document).on('click', function() {
     document.onmousedown = showCursorPos;
     if (y > 1200 && y < 1900) {
