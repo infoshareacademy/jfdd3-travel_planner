@@ -187,33 +187,41 @@ nav {
     display: flex;
     flex-wrap: wrap;
 }
+
 .about-us-main-container {
     width:50%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 .about-us-sub-sub-personal-container {
     max-width:264px;
     height:361px;
 }
+
 .about-us-image {
     border-radius:50%;
     height:35%;
     margin-top:25%;
 }
+
 .image-karina {
     margin-left: 41%;
 }
+
 .image-lukasz {
     margin-left: 37%;
 }
+
 .image-krzysztof {
     margin-left: 45%;
 }
+
 .image-radek {
     margin-left: 41%;
 }
+
 .about-us-text {
     background-color:rgb(64,186,180);
     color: #FFFFFF;
@@ -224,18 +232,23 @@ nav {
     padding:10px;
 
 }
+
 .about-us-h2 {
     text-align: center;
 }
+
 .about-us-text span {
    font-weight: bold;
 }
+
 .about-us-text p {
     text-align: justify;
 }
+
 .clear-about-us {
     height:70px;
 }
+
 .subscribe-newsletter {
     height: 110px;
     width: 299px;
@@ -357,7 +370,7 @@ div.form-contact-box .button	{
     margin:0 0 10px 0;
     padding:4px 7px;
     background:rgba(64,186,180,0.8);
-    border:0;
+    border: 0;
     position: relative;
     top:10px;
     left:150px;
