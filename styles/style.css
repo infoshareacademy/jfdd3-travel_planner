@@ -54,9 +54,15 @@ nav {
     font-style: normal;
 }
 
-.navigation a:hover {
-    color: #e8bf2a;
+/* class for an active menu element */
+.active {
+    color: #e8bf2a !important;
 }
+
+
+/*.navigation a:hover {*/
+    /*color: #e8bf2a;*/
+/*}*/
 
 /* css for main content*/
 
