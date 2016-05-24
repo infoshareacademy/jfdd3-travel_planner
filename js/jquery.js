@@ -5123,7 +5123,7 @@
             // push.apply(_, arraylike) throws on ancient WebKit
             jQuery.merge( nodes, tmp.childNodes );
 
-            // Remember the top-level container
+            // Remember the top-level container-about-us
             tmp = fragment.firstChild;
 
             // Ensure the created nodes are orphaned (#12392)
@@ -5677,7 +5677,7 @@
 
           // Support: Android 2.3
           // Check if div with explicit width and no margin-right incorrectly
-          // gets computed margin-right based on width of container. (#3333)
+          // gets computed margin-right based on width of container-about-us. (#3333)
           // WebKit Bug 13343 - getComputedStyle returns wrong value for margin-right
           // This support function is only executed once so no memoizing is needed.
           var ret,
