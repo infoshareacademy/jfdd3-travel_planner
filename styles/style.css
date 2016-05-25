@@ -173,6 +173,7 @@ nav {
 }
 
 .container-product-info {
+    padding-top: 60px;
     display: flex;
     flex-wrap: wrap;
     width:100%;
@@ -181,7 +182,7 @@ nav {
 }
 
 .spacer {
-    height: 50px;
+    height: 80px;
 }
 
 .product-info {
@@ -192,43 +193,34 @@ nav {
     display: flex;
 }
 
-.about-us-and-contact-form {
+.container-about-us {
+    padding-top: 80px;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: -10px;
+    margin-right: -10px;
+    justify-content: center;
+    align-items: center;
 }
 
-.about-us-main-container {
-    width:100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
 
-.about-us-sub-sub-personal-container {
-    max-width:264px;
-    height:361px;
+.container-about-us .item {
+    flex: 1 0 200px;
+    box-sizing: border-box;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .about-us-image {
+    display: flex;
     border-radius:50%;
     height:35%;
-    margin-top:25%;
-}
-
-.image-karina {
-    margin-left: 41%;
-}
-
-.image-lukasz {
-    margin-left: 37%;
-}
-
-.image-krzysztof {
-    margin-left: 45%;
-}
-
-.image-radek {
-    margin-left: 41%;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .about-us-text {
@@ -236,8 +228,8 @@ nav {
     color: #FFFFFF;
     text-shadow: 2px 2px 2px #949494;
     border-radius:5px;
-    width:250px;
-    margin-left:11px;
+    width:75%;
+    margin: 0 auto;
     padding:10px;
 
 }
@@ -247,15 +239,18 @@ nav {
 }
 
 .about-us-text span {
-   font-weight: bold;
+    font-weight: bold;
 }
 
 .about-us-text p {
     text-align: justify;
 }
 
+
+
+
 .clear-about-us {
-    height:170px;
+    height:250px;
 }
 
 
@@ -294,6 +289,7 @@ form, input, select, textarea {
 }
 
 .containter-about-us {
+    padding-top: 20px;
     margin-top: 40px;
     height: 150px;
     background:rgba(64,186,180,1);
@@ -410,7 +406,7 @@ footer li {
 .col {
     display: block;
     float: left;
-    margin: 1% 0 1% 1.6%;
+    margin: 1% 0 1% 0;
 }
 
 .col:first-child {
