@@ -38,6 +38,10 @@ table {
     height: 50px;
 }
 
+#availMovesCounter {
+    margin-left: 20px;
+}
+
 #start {
 
 
