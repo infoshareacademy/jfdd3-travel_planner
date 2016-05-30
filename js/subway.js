@@ -7,7 +7,7 @@ $(document).ready(function () {
     var selectedButton = "";
 
 
-    //function genereteGrid return new $table
+    //function generateGrid return new $table
     function generateGrid(axisX, axisY) {
         var $table, $tr, $td;
         $table = $('<table>');
