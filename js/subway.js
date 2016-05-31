@@ -6,7 +6,6 @@ $(document).ready(function () {
     var startingStation = [[8, 12]];
     var selectedButton = "";
     var $availMoves;
-    // $availMoves = Math.round(Math.random()* 10) * Math.round(Math.random() * 10);
 
 
     //function generateGrid return new $table
@@ -98,7 +97,6 @@ $(document).ready(function () {
         }
     }
     function generateAvailMoves () {
-        // var $availMoves;
         $availMoves = Math.round(Math.random()* 10) * Math.round(Math.random() * 10);
         if ($availMoves < 10 || $availMoves > 30) {
             generateAvailMoves ();
@@ -114,9 +112,6 @@ $(document).ready(function () {
     function addListeners() {
         $('#horizontal').click(function () {
             selectedButton = "hTracks";
-            var $availMovesLeft = $availMoves-- - 1;
-            $('#availMovesCounter').html($availMovesLeft);
-            console.log($availMovesLeft);
         });
 
         $('#vertical').click(function () {
@@ -149,9 +144,17 @@ $(document).ready(function () {
         var myRow = $tr.index();
         if (!($(this).hasClass('station'))) {
             $(this).toggleClass(selectedButton, '');
+        } else {
+            ($(this).hasClass('station'))
+                ++$availMoves;
         }
     });
 
+      $('.game').click(function () {
+        var $availMovesLeft = --$availMoves;
+        $('#availMovesCounter').html($availMovesLeft);
+
+    });
 
 
     generateControlPanel();
