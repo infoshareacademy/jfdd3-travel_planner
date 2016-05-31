@@ -22,6 +22,7 @@
 
 // set on function with event triggering onScroll function
 $(document).ready(function() {
+    $('.about-us-image').hide();
     // $(window).scroll(function() {
     //   var window_top = $(window).scrollTop();
     // })
@@ -43,6 +44,7 @@ $(document).ready(function() {
         $(this).hasClass('nav-link') ? $(this).addClass('navigation-active') : '' ;
         console.log('link clicked');
         var target = this.hash;
+        if (target === '#premiere' || target === '#about-us') {$('.about-us-image').fadeIn(3000);}
         menu = target;
         $target = $(target);
         $('html, body').stop().animate({
@@ -71,25 +73,11 @@ $(document).ready(function() {
             if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
                 $('a').removeClass("navigation-active");
                 currLink.addClass("navigation-active");
+                if (currLink.attr("href") === '#premiere') {$('.about-us-image').fadeIn(3000);}
             }
             else{
                 currLink.removeClass("navigation-active");
             }
         });
     }
-
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
