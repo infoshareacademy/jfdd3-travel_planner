@@ -5,6 +5,8 @@
 $(document).ready(function () {
     var startingStation = [[8, 12]];
     var selectedButton = "";
+    var $availMoves;
+    // $availMoves = Math.round(Math.random()* 10) * Math.round(Math.random() * 10);
 
 
     //function generateGrid return new $table
@@ -48,6 +50,7 @@ $(document).ready(function () {
         $form.append('<input type="button" id="rightBottom" value="Turn R B">');
         $form.append('<input type="button" id="leftTop" value="Turn L T">');
         $form.append('<input type="button" id="leftBottom" value="Turn L B">');
+        $form.append('<span id="availMovesCounter"></span>');
 
         var $controlsContainer = $('.controls');
         return $controlsContainer.append($form);
@@ -94,10 +97,26 @@ $(document).ready(function () {
             });
         }
     }
+    function generateAvailMoves () {
+        // var $availMoves;
+        $availMoves = Math.round(Math.random()* 10) * Math.round(Math.random() * 10);
+        if ($availMoves < 10 || $availMoves > 30) {
+            generateAvailMoves ();
+        } else {
+            $('#availMovesCounter').append($availMoves);
+            console.log($availMoves);
+        }
+        return $availMoves;
+    }
+
+
 
     function addListeners() {
         $('#horizontal').click(function () {
             selectedButton = "hTracks";
+            var $availMovesLeft = $availMoves-- - 1;
+            $('#availMovesCounter').html($availMovesLeft);
+            console.log($availMovesLeft);
         });
 
         $('#vertical').click(function () {
@@ -110,7 +129,7 @@ $(document).ready(function () {
 
 
         $('#leftTop').click(function() {
-            selectedButton = "leftTopTurn"
+            selectedButton = "leftTopTurn";
         });
 
         $('#leftBottom').click(function() {
@@ -120,6 +139,7 @@ $(document).ready(function () {
         $('#rightBottom').click(function() {
             selectedButton = "rightBottomTurn"
         });
+
 
     }
 
@@ -133,9 +153,11 @@ $(document).ready(function () {
     });
 
 
+
     generateControlPanel();
     generateGrid();
     generateStartingPoints()
     addListeners();
+    generateAvailMoves();
 });
 
