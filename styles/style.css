@@ -216,9 +216,10 @@ nav {
 }
 
 .about-us-image {
+    opacity: 0;
     display: flex;
     border-radius:50%;
-    // height:35%;
+    height:35%;
     width: 50%;
     margin: 0 auto;
 }
@@ -229,7 +230,6 @@ nav {
     text-shadow: 2px 2px 2px #949494;
     border-radius:5px;
     width:75%;
-    height: 400px;
     margin: 0 auto;
     padding:10px;
 
