@@ -1,0 +1,133 @@
+#premiere {
+    height: 900px;
+}
+#gamecontainer {
+    margin: auto;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+#webgame {
+    position: relative;
+    width: 800px;
+    height: 560px;
+    background-image: url(../images/map_gdansk.jpg);
+    border: solid 5px blue;
+    margin: 10px;
+}
+#menugame {
+    position: relative;
+    visibility: hidden;
+    width: 800px;
+    height: 200px;
+    border: 5px solid blue;
+}
+#menugame table, #webgame table {
+    border-collapse: collapse;
+}
+.cell {
+   background-color: rgba(255, 255, 255,0.5);
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    text-align: right;
+}
+.start {
+    background-image: url(../images/start.png);
+}
+.end {
+    background-image: url(../images/finish.png);
+}
+.rail_v {
+    background-image: url(../images/rail_v.png);
+}
+.rail_h {
+    background-image: url(../images/rail_h.png);
+}
+.rail_t1 {
+     background-image: url(../images/rail_t1.png);
+}
+.rail_t2 {
+    background-image: url(../images/rail_t2.png);
+}
+.rail_t3 {
+    background-image: url(../images/rail_t3.png);
+}
+.rail_t4 {
+    background-image: url(../images/rail_t4.png);
+}
+.buldoze {
+    background-image: url(../images/rail_bz.png);
+}
+.build {
+    display: none;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    pointer-events: none;
+    z-index: 1000;
+}
+.playButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+}
+button {
+    background-color: lemonchiffon;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
+}
+.info {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    z-index: 2;
+    width: 200px;
+    height: 150px;
+   // display: none;
+}
+.info-box1, .info-box2, .info-box3 {
+    height: 50px;
+    background-image: url(../images/loading.gif);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: 10px 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.info-box3 {
+    justify-content: center;
+    background-image: none;
+}
+div {
+    font-family: Arial, sans-serif;
+}
+.red{
+    background-color: red;
+}
+.blue {
+    background-color: blue;
+}
+.brown {
+    background-color: brown;
+}
+.green {
+    background-color: green;
+}
+.yellow {
+    background-color: yellow;
+}
+.metro {
+    background-color: black;
+    background-image: none;
+}
+.menu-counter {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
