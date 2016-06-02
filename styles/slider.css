@@ -1,0 +1,75 @@
+body {
+    height: 100%;
+}
+
+main {
+    height: 100%;
+}
+
+
+.main-slider-container {
+    position: relative;
+    width:80%;
+    height: 100%;
+}
+
+.carousel-indicators {
+    position: absolute;
+}
+
+.carousel-container {
+    width: 100%;
+    height:100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-image-container {
+    height: 100%;
+}
+
+.carousel-control {
+    position: absolute;
+    top:0;
+    bottom:0;
+    width: 15%;
+}
+
+.right {
+    right: 0;
+    left: auto;
+}
+
+.left {
+    left: 0;
+}
+
+.zur-gda-img {
+    background-image: url(../images/zuraw_gdanski.jpg);
+}
+
+/*.fon-nep-img {
+    background-image: url(../images/fontanna_neptuna.jpg);
+}
+
+.bra-wyz-img {
+    background-image: url(../images/brama_wyzynna.jpg);
+}*/
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel-control.left {
+    background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+}
+
+.carousel-control.right {
+    background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+}
+
+
+

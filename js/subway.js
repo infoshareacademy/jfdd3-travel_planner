@@ -6,7 +6,7 @@ $(document).ready(function () {
     var startingStation = [[8, 12]];
     var selectedButton = "";
     var $availMoves;
-
+    var SavailMovesAdded;
 
     //function generateGrid return new $table
     function generateGrid(axisX, axisY) {
@@ -106,6 +106,7 @@ $(document).ready(function () {
         }
         return $availMoves;
     }
+    
 
 
 
@@ -145,16 +146,28 @@ $(document).ready(function () {
         if (!($(this).hasClass('station'))) {
             $(this).toggleClass(selectedButton, '');
         } else {
-            ($(this).hasClass('station'))
-                ++$availMoves;
+            ++$availMoves;
+
         }
     });
 
-      $('.game').click(function () {
+      $('td' ).click(function () {
         var $availMovesLeft = --$availMoves;
         $('#availMovesCounter').html($availMovesLeft);
-
     });
+
+    $('td').click(function () {
+        var myCol = $(this).index();
+        var $tr = $(this).closest('tr');
+        var myRow = $tr.index();
+        if ($(this).hasClass('hTracks')) {
+            var $availMovesAdded = ++$availMoves;
+            $('#availMovesCounter').html($availMovesAdded);
+
+        }
+
+    })
+
 
 
     generateControlPanel();
