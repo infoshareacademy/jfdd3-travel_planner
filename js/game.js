@@ -116,11 +116,11 @@ function createInfo() {
 function buildRail(railPosition) {
     $game.off();
     $(document).mousemove(function() {
-        var x=event.x+window.pageXOffset-15;
-        var y=event.y+window.pageYOffset-15;
+        var x=event.x+window.pageXOffset-10;
+        var y=event.y+window.pageYOffset-10;
         $('.build').css({
             'display': 'block',
-            'backgroundImage': 'url(../images/rail_'+railPosition+'.png)',
+            'backgroundImage': 'url(images/rail_'+railPosition+'.png)',
             'top': y+'px',
             'left': x+'px'}
         );
@@ -177,7 +177,7 @@ function onClicks() {
         $('.build').css({'display': 'none'});
         $(this).css({'display': 'none'});
         $('.info').css({'display': 'block'});
-        $('.info-box1').css({'backgroundImage': 'url(../images/loading.gif)'});
+        $('.info-box1').css({'backgroundImage': 'url(images/loading.gif)'});
         createInfo();
         wayPoints.forEach(function(a) {route.push(a);});
         route.push(positionEnd);
@@ -289,7 +289,7 @@ function moveMetro() {
         }
         $('.info-box3').text('Twój wynik: '+score);
         if (last == positionEnd) {
-            $('.info-box2').text('Przejazd OK !').css({'backgroundImage': 'url(../images/check.png)'});
+            $('.info-box2').text('Przejazd OK !').css({'backgroundImage': 'url(images/check.png)'});
             $('button').text('Zagraj ponownie !').css({'display': 'block'});
             $('.playButton').on('click', 'button', function () {
                 route = [];
@@ -323,7 +323,7 @@ function fixRoute() {
         if ($('td', $game).eq(lastPosition).hasClass('end')) {
             console.log(routeFixed);
             setTimeout(function() {
-                $('.info-box1').text('Trasa OK !').css({'backgroundImage': 'url(../images/check.png)'});
+                $('.info-box1').text('Trasa OK !').css({'backgroundImage': 'url(images/check.png)'});
                 $('.info-box2').css({'display':'flex'});
                 $('.info-box3').css({'display':'flex'});
                 winner();
@@ -331,7 +331,7 @@ function fixRoute() {
         } else {
             console.log(routeFixed);
             setTimeout(function() {
-                $('.info-box1').text('Błąd').css({'backgroundImage': 'url(../images/no.png)'});
+                $('.info-box1').text('Błąd').css({'backgroundImage': 'url(images/no.png)'});
                 $('button').text('Popraw trasę i spróbuj ponownie').css({'display':'block'});
                 onClicks();
             },1000);
@@ -342,6 +342,7 @@ function fixRoute() {
 /* game starts here */
 $('#submit').on('click', function(event) {
     event.preventDefault();
+    $('#premiere').animate({height: 1000},3000);
     $('#gamecontainer').css({'display': 'flex'});
     createBoard();
     $('.playButton').on('click', 'button', function () {

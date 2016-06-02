@@ -1,12 +1,10 @@
-#premiere {
-    height: 900px;
-}
 #gamecontainer {
     margin: auto;
     display: none;
     align-items: center;
     flex-direction: column;
     position: relative;
+    top: 50px;
 }
 #webgame {
     position: relative;
@@ -67,7 +65,7 @@
     height: 20px;
     padding: 0;
     pointer-events: none;
-    z-index: 1000;
+    z-index: 6;
 }
 .playButton {
     position: absolute;
@@ -88,7 +86,6 @@ button {
     z-index: 2;
     width: 200px;
     height: 150px;
-   // display: none;
 }
 .info-box1, .info-box2, .info-box3 {
     height: 50px;
@@ -104,8 +101,9 @@ button {
     justify-content: center;
     background-image: none;
 }
-div {
+.info div {
     font-family: Arial, sans-serif;
+    color: black;
 }
 .red{
     background-color: red;
