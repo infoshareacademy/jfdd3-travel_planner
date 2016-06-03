@@ -343,9 +343,9 @@ function fixRoute() {
 $('#submit').on('click', function(event) {
     event.preventDefault();
     if (screen.width > 1500) {
-        $('#premiere').animate({height: 1200}, 3000);
-    } else {
         $('#premiere').animate({height: 1000}, 3000);
+    } else {
+        $('#premiere').animate({height: 1200}, 3000);
     }
     $('#gamecontainer').css({'display': 'flex'});
     createBoard();
