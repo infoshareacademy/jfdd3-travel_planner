@@ -250,6 +250,7 @@ nav {
     width:75%;
     margin: 10px auto;
     padding:10px;
+    min-height: 400px;
 
 }
 
