@@ -68,6 +68,7 @@ nav {
     height: 500px;
 }
 
+
 .trip-planner {
     position: absolute;
     top:2%;
@@ -279,6 +280,13 @@ nav {
     font-family: Arial, sans-serif;
     line-height: 100px;
     padding-top: 100px;
+}
+
+@media screen and (max-width: 626px) {
+    .fog-on-map  h1 {
+        font-size: 30px;
+        padding-top: 50px;
+    }
 }
 
 .container-map:hover .fog-on-map {
