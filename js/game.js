@@ -56,34 +56,34 @@ function createPlaces() {
 function createMenu() {
     var $table = $('<table>');
     var k = 0;
-    for (var i=1; i<11; i++) {
+    for (var i = 1; i < 11; i++) {
         var $tr = $('<tr>');
         $table.append($tr);
-        for (var j=1; j<41; j++) {
+        for (var j = 1; j < 11; j++) {
             var $td = $('<td>');
-            $td.addClass('cell').data('menuCellindex',k);
+            $td.addClass('cell').data('menuCellindex', k);
             $tr.append($td);
             k++;
         }
     }
     $menu.empty().append($table);
-    $('td', $menu).eq(84).addClass('rail_v');
-    $('td', $menu).eq(89).addClass('rail_h');
-    $('td', $menu).eq(94).addClass('rail_t1');
-    $('td', $menu).eq(99).addClass('rail_t2');
-    $('td', $menu).eq(104).addClass('rail_t3');
-    $('td', $menu).eq(109).addClass('rail_t4');
-    $('td', $menu).eq(114).addClass('buldoze');
-    $('td', $menu).eq(204).addClass('brown');
-    $('td', $menu).eq(205).text('2');
-    $('td', $menu).eq(210).addClass('red');
-    $('td', $menu).eq(211).text('5');
-    $('td', $menu).eq(216).addClass('yellow');
-    $('td', $menu).eq(217).text('10');
-    $('td', $menu).eq(222).addClass('green');
-    $('td', $menu).eq(223).text('12');
-    $('td', $menu).eq(228).addClass('blue');
-    $('td', $menu).eq(229).text('15');
+    $('td', $menu).eq(11).addClass('rail_v');
+    $('td', $menu).eq(31).addClass('rail_h');
+    $('td', $menu).eq(15).addClass('rail_t1');
+    $('td', $menu).eq(13).addClass('rail_t2');
+    $('td', $menu).eq(35).addClass('rail_t3');
+    $('td', $menu).eq(33).addClass('rail_t4');
+    $('td', $menu).eq(27).addClass('buldoze');
+    $('td', $menu).eq(51).addClass('brown');
+    $('td', $menu).eq(52).text('2');
+    $('td', $menu).eq(54).addClass('red');
+    $('td', $menu).eq(55).text('5');
+    $('td', $menu).eq(71).addClass('yellow');
+    $('td', $menu).eq(72).text('10');
+    $('td', $menu).eq(74).addClass('green');
+    $('td', $menu).eq(75).text('12');
+    $('td', $menu).eq(77).addClass('blue');
+    $('td', $menu).eq(78).text('15');
     $menu.append($('<div>'));
     $('div', $menu).addClass('menu-counter').text('Pozostało torów do użycia: '+counter);
 }
@@ -342,7 +342,11 @@ function fixRoute() {
 /* game starts here */
 $('#submit').on('click', function(event) {
     event.preventDefault();
-    $('#premiere').animate({height: 1000},3000);
+    if (screen.width > 1500) {
+        $('#premiere').animate({height: 1200}, 3000);
+    } else {
+        $('#premiere').animate({height: 1000}, 3000);
+    }
     $('#gamecontainer').css({'display': 'flex'});
     createBoard();
     $('.playButton').on('click', 'button', function () {

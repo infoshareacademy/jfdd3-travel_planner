@@ -8,28 +8,33 @@
 }
 #webgame {
     position: relative;
-    width: 800px;
-    height: 560px;
+    width: 1000px;
+    height: 700px;
     background-image: url(../images/map_gdansk.jpg);
+    background-size: contain;
     border: solid 5px blue;
     margin: 10px;
 }
 #menugame {
+    background-color: #FFFFFF;
+    color: #000000;
     position: relative;
     visibility: hidden;
-    width: 800px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border: 5px solid blue;
+    margin: 10px;
 }
 #menugame table, #webgame table {
     border-collapse: collapse;
 }
 .cell {
-   background-color: rgba(255, 255, 255,0.5);
-    width: 20px;
-    height: 20px;
+    background-color: rgba(255, 255, 255,0.5);
+    width: 25px;
+    height: 25px;
     padding: 0;
     text-align: right;
+    background-size: contain;
 }
 .start {
     background-image: url(../images/start.png);
@@ -61,8 +66,8 @@
 .build {
     display: none;
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     padding: 0;
     pointer-events: none;
     z-index: 6;
@@ -128,4 +133,10 @@ button {
     position: absolute;
     bottom: 10px;
     left: 10px;
+}
+@media screen and (min-width: 1501px) {
+    #gamecontainer {
+        flex-direction: row;
+        justify-content: center;
+    }
 }
