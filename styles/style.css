@@ -226,6 +226,7 @@ nav {
 
 
 .about-us-image {
+    opacity: 0;
     display: flex;
     border-radius:10%;
     width: 100%;
