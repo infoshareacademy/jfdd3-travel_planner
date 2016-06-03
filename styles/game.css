@@ -71,6 +71,7 @@
     padding: 0;
     pointer-events: none;
     z-index: 6;
+    background-size: contain;
 }
 .playButton {
     position: absolute;
