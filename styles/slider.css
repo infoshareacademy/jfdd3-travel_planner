@@ -45,6 +45,10 @@ main {
     z-index: 1;
 }
 
+.image-indicator:hover {
+    background-color: white;
+}
+
 .indicator1 {
     margin-left: 43%;
 }
@@ -82,7 +86,7 @@ main {
 }
 
 .zur-gda-img {
-    background-image: url(../images/zuraw_gdanski.jpg);
+    background-image: url(../images/zuraw-gdanski-hi-res.jpg);
 }
 
 .fon-nep-img {
@@ -122,7 +126,7 @@ main {
     width: 64px;
     height: 64px;
     margin-left: 25%;
-    background-image: url(../images/ikony/64kb/back-white.png);
+   background-image: url(../images/ikony/64kb/back-white.png);
 }
 
 .icon-next {
