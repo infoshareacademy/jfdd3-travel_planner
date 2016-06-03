@@ -96,6 +96,27 @@ function onEscKey() {
             $(document).off('mousemove');
             $game.off();
         }
+        if (e.keyCode == 49) {
+            $('.rail_v', $menu).trigger('click');
+        }
+        if (e.keyCode == 50) {
+            $('.rail_t2', $menu).trigger('click');
+        }
+        if (e.keyCode == 51) {
+            $('.rail_t1', $menu).trigger('click');
+        }
+        if (e.keyCode == 52) {
+            $('.rail_h', $menu).trigger('click');
+        }
+        if (e.keyCode == 53) {
+            $('.rail_t4', $menu).trigger('click');
+        }
+        if (e.keyCode == 54) {
+            $('.rail_t3', $menu).trigger('click');
+        }
+        if (e.keyCode == 48) {
+            $('.rail_bz1', $menu).trigger('click');
+        }
     });
 }
 
@@ -342,11 +363,7 @@ function fixRoute() {
 /* game starts here */
 $('#submit').on('click', function(event) {
     event.preventDefault();
-    if (screen.width > 1500) {
-        $('#premiere').animate({height: 1000}, 3000);
-    } else {
-        $('#premiere').animate({height: 1200}, 3000);
-    }
+    $('#premiere').animate({height: 1200}, 3000);
     $('#gamecontainer').css({'display': 'flex'});
     createBoard();
     $('.playButton').on('click', 'button', function () {
