@@ -115,7 +115,7 @@ function onEscKey() {
             $('.rail_t3', $menu).trigger('click');
         }
         if (e.keyCode == 48) {
-            $('.rail_bz1', $menu).trigger('click');
+            $('.buldoze', $menu).trigger('click');
         }
     });
 }
