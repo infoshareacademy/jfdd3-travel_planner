@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <title>Travel Planner</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/game.css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext" rel="stylesheet"
           type="text/css">
 
 </head>
 <body>
-
+<div class="build"></div>
 <nav>
     <ul class="navigation">
         <li class="nav-item"><a href="#top" class="nav-link navigation-active">START</a></li>
@@ -43,7 +44,6 @@
             <br><br>
             <input type="submit" value="Zatwierdź">
         </form>
-        <img src="images/map9.png" alt="mapa" class="mapa">
         <img src="images/zuraw_gdanski.jpg" alt="zuraw" class="zur-gda">
         <img src="images/fontanna_neptuna.jpg" alt="fontanna" class="fon-nep">
         <img src="images/dom_uphagena.jpg" alt="dom" class="dom-uph">
@@ -107,12 +107,18 @@
                 <input type="submit" class="button" id="submit" value="SIGN UP">
             </div>
         </form>
+
+        <div id="gamecontainer">
+            <div id="webgame"></div>
+            <div id="menugame"></div>
+        </div>
+
     </div>
 
     <div class="container-about-us" id="about-us">
         <div class="item">
             <div class="about-us-text">
-                <img src="images/lukas.png" alt="zdjęcie" class="about-us-image">
+                <img src="images/lukasz.jpg" alt="Łukasz" class="about-us-image">
                 <h2 class="about-us-h2">Łukasz</h2>
                 <p>
                     Jestem zajebisty. Jestem zwycięzcą. Ketchup, majonez i musztarda. Jeżdże tramwajem.
@@ -124,34 +130,31 @@
 
         <div class="item">
             <div class="about-us-text">
-                <img src="images/krzysztof.png" alt="zdjęcie" class="about-us-image">
+                <img src="images/radek.jpg" alt="Radek" class="about-us-image">
+                <h2 class="about-us-h2">Radek</h2>
+                <p>
+                    Jestem zajebisty. Lubie placki. Nie mam problemu z alkoholem. Nie lubie blokad na koła od
+                    Straży Wiejskiej. <span>Jestem niewyspany.</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="about-us-text">
+                <img src="images/krzysiek.jpg" alt="Krzysiek" class="about-us-image">
                 <h2 class="about-us-h2">Krzysiek</h2>
                 <p>
                     Jestem zajebisty. Lubie jeść i spać do południa. <span>Jestem niewyspany.</span>
-
                    </p>
             </div>
         </div>
 
         <div class="item">
             <div class="about-us-text">
-                <img src="images/karina.png" alt="zdjęcie" class="about-us-image">
-
+                <img src="images/karina.png" alt="Karina" class="about-us-image">
                 <h2 class="about-us-h2">Karina</h2>
                 <p>
-                    Jestem zajebista. Lubię jednorożce i Barbie. Ken giń.
-                    <span>Jestem niewyspana.</span>
-
-                </p>
-            </div>
-        </div>
-        <div class="item">
-            <div class="about-us-text">
-                <img src="images/radek.png" alt="zdjęcie" class="about-us-image">
-                <h2 class="about-us-h2">Radek</h2>
-                <p>
-                    Jestem zajebisty. Lubie placki. Nie mam problemu z alkoholem. Nie lubie blokad na koła od
-                    Straży Wiejskiej. <span>Jestem niewyspany.</span>
+                    Jestem zajebista. Lubie jeść i spać do południa. <span>Jestem niewyspana.</span>
                 </p>
             </div>
         </div>
@@ -178,7 +181,7 @@
 </footer>
 
 <script src="js/jquery.js"></script>
-<script src="js/jquery.appear.js"></script>
 <script src="js/main.js"></script>
+<script src="js/game.js"></script>
 </body>
 </html>
