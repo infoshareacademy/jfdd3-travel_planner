@@ -120,6 +120,7 @@ function onEscKey() {
     });
 }
 
+
 function createInfo() {
     var $info = $('div.info');
     for (var i=0; i<3; i++) {
