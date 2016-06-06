@@ -25,11 +25,13 @@ function createBoard() {
         }
     }
     $game.empty().append($table);
-    for (var l=0; l<2; l++) {
+    for (var l=0; l<4; l++) {
         $game.append($('<div>'));
     }
     $('div', $game).eq(0).addClass('playButton').append($('<button>'));
     $('div', $game).eq(1).addClass('info');
+    $('div', $game).eq(2).addClass('legend').text('Sterowanie: myszka / wybór torów klawisze: 1-6, kasowanie: 0. Połącz START (zielony romb) z METĄ.');
+    $('div', $game).eq(3).addClass('legend2').text(' Punkty otrzymasz za każdy podłączony przystanek do linii. Liczba torów jest OGRANICZONA.');
     if (positionStart === 0) {
         $('button').text('Rozpocznij grę!');
     } else {$('button').text('Rozpocznij przejazd !');}
