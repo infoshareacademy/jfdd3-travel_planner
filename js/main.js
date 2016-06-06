@@ -25,6 +25,9 @@ $(document).ready(function() {
     // $(window).scroll(function() {
     //   var window_top = $(window).scrollTop();
     // })
+    $('.container-map').css({'height': (screen.height-160)+'px'});
+    $('.fog-on-map').css({'height': (screen.height-160)+'px'});
+    console.log(screen.width);
     $(document).on("scroll", onScroll);
 
     /* detect which link is clicked, remove class active from all a tags and add active class
@@ -43,6 +46,7 @@ $(document).ready(function() {
         $(this).hasClass('nav-link') ? $(this).addClass('navigation-active') : '' ;
         console.log('link clicked');
         var target = this.hash;
+        if (target === '#premiere' || target === '#about-us') {$('.about-us-image').animate({opacity: 1},3000);}
         menu = target;
         $target = $(target);
         $('html, body').stop().animate({
@@ -58,38 +62,17 @@ $(document).ready(function() {
     function onScroll(){
         var scrollPos = $(document).scrollTop();
 
-        // $(function() {
-        //
-        //     $('.top').appear().on('appear', function () {
-        //         console.log($(this).addClass(''));
-        //     });
-        // });
-
         $('a').each(function () {
             var currLink = $(this);
             var refElement = $(currLink.attr("href"));
             if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
                 $('a').removeClass("navigation-active");
                 currLink.addClass("navigation-active");
+                if (currLink.attr("href") === '#premiere') {$('.about-us-image').animate({opacity: 1},3000);}
             }
             else{
                 currLink.removeClass("navigation-active");
             }
         });
     }
-
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
