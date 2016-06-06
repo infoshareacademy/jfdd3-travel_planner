@@ -95,20 +95,20 @@ function onEscKey() {
             );
             $(document).off('mousemove');
             $game.off();
-        }
-        if (e.keyCode == 49) {
+        }                                   
+        if (e.keyCode == 50) {
             $('.rail_v', $menu).trigger('click');
         }
-        if (e.keyCode == 50) {
+        if (e.keyCode == 51) {
             $('.rail_t2', $menu).trigger('click');
         }
-        if (e.keyCode == 51) {
+        if (e.keyCode == 53) {
             $('.rail_t1', $menu).trigger('click');
         }
-        if (e.keyCode == 52) {
+        if (e.keyCode == 49) {
             $('.rail_h', $menu).trigger('click');
         }
-        if (e.keyCode == 53) {
+        if (e.keyCode == 52) {
             $('.rail_t4', $menu).trigger('click');
         }
         if (e.keyCode == 54) {
@@ -119,6 +119,7 @@ function onEscKey() {
         }
     });
 }
+
 
 function createInfo() {
     var $info = $('div.info');
@@ -154,6 +155,7 @@ function buildRail(railPosition) {
             counter = counter - 1;
             $('div', $menu).addClass('menu-counter').text('Pozostało torów do użycia: ' + counter);
             if (counter === 0) {$game.off();}
+            playSound('audio/track.wav');
         });
         }
     } else {
@@ -163,6 +165,7 @@ function buildRail(railPosition) {
             delete route[indexRemovedCell];
             counter = counter + 1;
             $('div', $menu).addClass('menu-counter').text('Pozostało torów do użycia: '+counter);
+            playSound('audio/explosion.wav')
         });
     }
 
@@ -292,6 +295,7 @@ function winner() {
     $('.playButton').off();
     $('td', $game).eq(positionStart).addClass('metro');
     routeFixed.pop();
+    playSound('audio/horn.wav')
     moveMetro();
 }
 
@@ -302,14 +306,15 @@ function moveMetro() {
         last = routeFixed.pop();
         $('td', $game).eq(last).addClass('metro');
         if ($('td', $game).eq(last).hasClass('waypoint')) {
-            if ($('td', $game).eq(last).hasClass('brown')) {score+=2;}
-            if ($('td', $game).eq(last).hasClass('red')) {score+=5;}
-            if ($('td', $game).eq(last).hasClass('yellow')) {score+=10;}
-            if ($('td', $game).eq(last).hasClass('green')) {score+=12;}
-            if ($('td', $game).eq(last).hasClass('blue')) {score+=15;}
+            if ($('td', $game).eq(last).hasClass('brown')) {score+=2; playSound('audio/bell.wav');}
+            if ($('td', $game).eq(last).hasClass('red')) {score+=5; playSound('audio/bell.wav');}
+            if ($('td', $game).eq(last).hasClass('yellow')) {score+=10; playSound('audio/bell.wav');}
+            if ($('td', $game).eq(last).hasClass('green')) {score+=12; playSound('audio/bell.wav');}
+            if ($('td', $game).eq(last).hasClass('blue')) {score+=15; playSound('audio/bell.wav');}
         }
         $('.info-box3').text('Twój wynik: '+score);
         if (last == positionEnd) {
+            playSound('audio/applause.wav')
             $('.info-box2').text('Przejazd OK !').css({'backgroundImage': 'url(images/check.png)'});
             $('button').text('Zagraj ponownie !').css({'display': 'block'});
             $('.playButton').on('click', 'button', function () {
@@ -342,7 +347,7 @@ function fixRoute() {
         fixRoute();
     } else {
         if ($('td', $game).eq(lastPosition).hasClass('end')) {
-            console.log(routeFixed);
+            // console.log(routeFixed);
             setTimeout(function() {
                 $('.info-box1').text('Trasa OK !').css({'backgroundImage': 'url(images/check.png)'});
                 $('.info-box2').css({'display':'flex'});
@@ -352,6 +357,7 @@ function fixRoute() {
         } else {
             console.log(routeFixed);
             setTimeout(function() {
+                playSound('audio/error.wav')
                 $('.info-box1').text('Błąd').css({'backgroundImage': 'url(images/no.png)'});
                 $('button').text('Popraw trasę i spróbuj ponownie').css({'display':'block'});
                 onClicks();
@@ -360,10 +366,19 @@ function fixRoute() {
     }
 }
 
+/* Audio */
+
+function playSound(path) {
+    var audioElement = document.createElement('audio');
+    audioElement.setAttribute('src', path);
+    audioElement.play();
+}
+
+
 /* game starts here */
 $('#submit').on('click', function(event) {
     event.preventDefault();
-    $('#premiere').animate({height: 1200}, 3000);
+    $('#premiere').animate({height: 1200}, 1000);
     $('#gamecontainer').css({'display': 'flex'});
     createBoard();
     $('.playButton').on('click', 'button', function () {
