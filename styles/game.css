@@ -135,6 +135,22 @@ button {
     bottom: 10px;
     left: 10px;
 }
+.legend {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 800px;
+    height: 50px;
+    color: black;
+}
+.legend2 {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    width: 800px;
+    height: 50px;
+    color: black;
+}
 @media screen and (min-width: 1501px) {
     #gamecontainer {
         flex-direction: row;

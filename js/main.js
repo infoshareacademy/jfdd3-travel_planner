@@ -25,6 +25,9 @@ $(document).ready(function() {
     // $(window).scroll(function() {
     //   var window_top = $(window).scrollTop();
     // })
+    $('.container-map').css({'height': (screen.height-160)+'px'});
+    $('.fog-on-map').css({'height': (screen.height-160)+'px'});
+    console.log(screen.width);
     $(document).on("scroll", onScroll);
 
     /* detect which link is clicked, remove class active from all a tags and add active class
