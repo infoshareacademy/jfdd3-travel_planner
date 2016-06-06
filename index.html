@@ -5,6 +5,7 @@
     <title>Travel Planner</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/game.css">
+    <link rel="stylesheet" href="styles/slider.css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,latin-ext" rel="stylesheet"
           type="text/css">
 
@@ -44,10 +45,39 @@
             <br><br>
             <input type="submit" value="Zatwierdź">
         </form>
-        <img src="images/zuraw_gdanski.jpg" alt="zuraw" class="zur-gda">
-        <img src="images/fontanna_neptuna.jpg" alt="fontanna" class="fon-nep">
-        <img src="images/dom_uphagena.jpg" alt="dom" class="dom-uph">
-        <img src="images/brama_wyzynna.jpg" alt="brama" class="brama-wyz">
+        <div class="main-slider-container">
+
+            <div class="carousel-indicators">
+
+                <span class="image-indicator indicator1"></span>
+
+                <span class="image-indicator indicator2"></span>
+
+                <span class="image-indicator indicator3"></span>
+
+                <span class="image-indicator indicator4"></span>
+
+                <span class="image-indicator indicator5"></span>
+
+            </div>
+
+
+            <div class="carousel-container">
+
+                <div class="fill"></div>
+
+            </div>
+
+            <div id="left" class="carousel-control">
+                <span class="icon-prev"></span>
+            </div>
+
+            <div id="right" class="carousel-control">
+                <span class="icon-next"></span>
+            </div>
+
+
+        </div>
     </div>
 
     <div class="container-product-info" id="product">
@@ -182,5 +212,6 @@
 <script src="js/jquery.js"></script>
 <script src="js/main.js"></script>
 <script src="js/game.js"></script>
+<script src="js/slider.js"></script>
 </body>
 </html>

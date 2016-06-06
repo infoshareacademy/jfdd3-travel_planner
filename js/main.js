@@ -27,6 +27,7 @@ $(document).ready(function() {
     // })
     $('.container-map').css({'height': (screen.height-160)+'px'});
     $('.fog-on-map').css({'height': (screen.height-160)+'px'});
+    $('.main-slider-container').css({'height': (screen.height-160)+'px'});
     console.log(screen.width);
     $(document).on("scroll", onScroll);
 
