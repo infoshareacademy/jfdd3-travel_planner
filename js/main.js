@@ -59,13 +59,6 @@ $(document).ready(function() {
     function onScroll(){
         var scrollPos = $(document).scrollTop();
 
-        // $(function() {
-        //
-        //     $('.top').appear().on('appear', function () {
-        //         console.log($(this).addClass(''));
-        //     });
-        // });
-
         $('a').each(function () {
             var currLink = $(this);
             var refElement = $(currLink.attr("href"));
