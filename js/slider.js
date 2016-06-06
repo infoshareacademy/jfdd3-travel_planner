@@ -12,7 +12,7 @@ $(document).ready(function () {
             // update index based on array length
             i = i % images.length;
             // update background from array using the index value
-            $('.fill').css({'background-image': images[i++], 'background-size': 'cover', 'transition': '1s'});
+            $('.fill').css({'background-image': images[i++], 'transition': '1s'});
             console.log("right: " + i);
         });
 
@@ -24,7 +24,7 @@ $(document).ready(function () {
             if(i === 0) {
                 i = images.length;
             } else {
-                $('.fill').css({'background-image': images[i--], 'background-size': 'cover', 'transition': '1s'});
+                $('.fill').css({'background-image': images[i--], 'transition': '1s'});
             }
             console.log("left: " + i);
         });
@@ -45,23 +45,23 @@ $(document).ready(function () {
     carouselIndicators.on("click", function(){
         switch(true) {
             case $(this).hasClass('indicator1'):
-                $('.fill').css({'background-image': images[0], 'background-size': 'cover', 'transition': '1s'});
+                $('.fill').css({'background-image': images[0], 'transition': '1s'});
                 i = 0;
                 break;
             case $(this).hasClass('indicator2'):
-                $('.fill').css({'background-image': images[1], 'background-size': 'cover', 'transition': '1s'});
+                $('.fill').css({'background-image': images[1], 'transition': '1s'});
                 i = 1;
                 break;
             case $(this).hasClass('indicator3'):
-                $('.fill').css({'background-image': images[2], 'background-size': 'cover', 'transition': '1s'});
+                $('.fill').css({'background-image': images[2], 'transition': '1s'});
                 i = 2;
                 break;
             case $(this).hasClass('indicator4'):
-                $('.fill').css({'background-image': images[3], 'background-size': 'cover', 'transition': '1s'});
+                $('.fill').css({'background-image': images[3], 'transition': '1s'});
                 i = 3;
                 break;
             case $(this).hasClass('indicator5'):
-                $('.fill').css({'background-image': images[4], 'background-size': 'cover', 'transition': '1s'});
+                $('.fill').css({'background-image': images[4], 'transition': '1s'});
                 i = 4;
                 break;
         }
