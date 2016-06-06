@@ -295,7 +295,7 @@ function winner() {
     $('.playButton').off();
     $('td', $game).eq(positionStart).addClass('metro');
     routeFixed.pop();
-    playSound('audio/horn.wav')
+    playSound('audio/horn.wav');
     moveMetro();
 }
 
@@ -314,7 +314,7 @@ function moveMetro() {
         }
         $('.info-box3').text('Twój wynik: '+score);
         if (last == positionEnd) {
-            playSound('audio/applause.wav')
+            playSound('audio/applause.wav');
             $('.info-box2').text('Przejazd OK !').css({'backgroundImage': 'url(images/check.png)'});
             $('button').text('Zagraj ponownie !').css({'display': 'block'});
             $('.playButton').on('click', 'button', function () {
@@ -357,7 +357,7 @@ function fixRoute() {
         } else {
             console.log(routeFixed);
             setTimeout(function() {
-                playSound('audio/error.wav')
+                playSound('audio/error.wav');
                 $('.info-box1').text('Błąd').css({'backgroundImage': 'url(images/no.png)'});
                 $('button').text('Popraw trasę i spróbuj ponownie').css({'display':'block'});
                 onClicks();
