@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     var images = ['url(images/sail-boat1080.jpg)', 'url(images/bazylika1080.jpg)', 'url(images/brama-wyzynna1080.jpg)', 'url(images/dluga-ulica1080.jpg)', 'url(images/zuraw-gdanski-hi-res.jpg)'];
-
+    console.log(images);
     //  variable to store index
     var i = 0;
     var carouselIndicators = $('.image-indicator');
@@ -19,17 +19,20 @@ $(document).ready(function () {
 
     $('#left')
         .click(function () {
-            // update index based on array length
-            i = i % images.length;
+
             // update background from array using the index value
-            $('.fill').css({'background-image': images[i++], 'background-size': 'cover', 'transition': '1s'});
+            if(i === 0) {
+                i = images.length;
+            } else {
+                $('.fill').css({'background-image': images[i--], 'background-size': 'cover', 'transition': '1s'});
+            }
             console.log("left: " + i);
         });
 
-    // $('main-slider-container').trigger(setInterval(function () {
-    //     $('#left').click();
-    //     console.log(i);
-    // }, 3000));
+    $('main-slider-container').trigger(setInterval(function () {
+        $('#right').click();
+        console.log(i);
+    }, 3000));
 
 
     // carouselIndicators.each(function (index) {
@@ -38,7 +41,34 @@ $(document).ready(function () {
     //             $(this).addClass('indicator-background');
     //         });
     // });
+
+    carouselIndicators.on("click", function(){
+        switch(true) {
+            case $(this).hasClass('indicator1'):
+                $('.fill').css({'background-image': images[0], 'background-size': 'cover', 'transition': '1s'});
+                i = 0;
+                break;
+            case $(this).hasClass('indicator2'):
+                $('.fill').css({'background-image': images[1], 'background-size': 'cover', 'transition': '1s'});
+                i = 1;
+                break;
+            case $(this).hasClass('indicator3'):
+                $('.fill').css({'background-image': images[2], 'background-size': 'cover', 'transition': '1s'});
+                i = 2;
+                break;
+            case $(this).hasClass('indicator4'):
+                $('.fill').css({'background-image': images[3], 'background-size': 'cover', 'transition': '1s'});
+                i = 3;
+                break;
+            case $(this).hasClass('indicator5'):
+                $('.fill').css({'background-image': images[4], 'background-size': 'cover', 'transition': '1s'});
+                i = 4;
+                break;
+        }
+    });
 });
+
+
 
 
 

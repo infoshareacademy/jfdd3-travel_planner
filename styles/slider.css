@@ -82,18 +82,6 @@ main {
     left: 0;
 }
 
-.zur-gda-img {
-
-}
-
-.fon-nep-img {
-    background-image: url(../images/fontanna_neptuna.jpg);
-}
-
-.bra-wyz-img {
-    background-image: url(../images/brama_wyzynna.jpg);
-}
-
 .fill {
     position: absolute;
     width: 100%;
