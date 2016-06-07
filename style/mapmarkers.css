@@ -4,6 +4,6 @@ html, body {
     padding: 0;
 }
 
-#map-container {
-    height:100%;
+#googleMap {
+    height: 100%;
 }
