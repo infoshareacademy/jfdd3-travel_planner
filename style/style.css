@@ -268,6 +268,14 @@ main {
   background-image: url(../images/ikony/64kb/next-white.png);
   visibility: hidden; }
 
+#map-body, #map-html {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+#map {
+  height: 100%; }
+
 /* global css */
 body {
   margin: 0;
