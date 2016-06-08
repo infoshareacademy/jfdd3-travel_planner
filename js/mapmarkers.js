@@ -1,20 +1,20 @@
-/**
- * Created by Lukasz on 2016-06-07.
+/** Created by Lukasz on 2016-06-07.
  */
 $(document).ready(function () {
-    
+
     function initialize() {
         var mapProp = {
-            center:new google.maps.LatLng(54.3466531,18.6483953),
-            zoom:14,
-            mapTypeId:google.maps.MapTypeId.ROADMAP
+            center: new google.maps.LatLng(54.3466531, 18.6483953),
+            zoom: 14,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
         };
-        var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 
     }
+
     google.maps.event.addDomListener(window, 'load', initialize);
-   
-    var $places = [
+
+    var places = [
         {
             name: 'Fontanna Neptuna',
             coordinates: {lat: 54.3485481, lng: 18.6510408}
@@ -32,18 +32,25 @@ $(document).ready(function () {
             coordinates: {lat: 54.4067082, lng: 18.6658734}
         }
     ];
-    console.log($places);
+    console.log(places);
 
-    var $coordinates = $.map( $places, function(n){
+    var coordinates = $.map(places, function (n) {
 
         return n.coordinates;
     });
-    console.log($coordinates);
+    console.log(coordinates);
 
-    var $randomPlaces = $coordinates[Math.round(Math.random() * 2)];
+    var randomPlaces = [];
+
+    for (var i = 0; i < 2; i += 1) {
+
+        var startingPoints = coordinates[Math.round(Math.random() * 3)];
+        randomPlaces.push(startingPoints);
+        console.log(startingPoints);
+    }
 
 
-    console.log($randomPlaces);
-    
+    console.log(randomPlaces);
+
 });
 
