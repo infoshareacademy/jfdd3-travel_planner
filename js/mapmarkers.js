@@ -40,9 +40,9 @@ $(document).ready(function () {
     });
     console.log($coordinates);
 
-    var $randomPlaces = $coordinates.forEach(function(element, index) {
-        return element[index].Math.round(Math.random) * 2;
-    });
+    var $randomPlaces = $coordinates[Math.round(Math.random() * 2)];
+
+
     console.log($randomPlaces);
     
 });
