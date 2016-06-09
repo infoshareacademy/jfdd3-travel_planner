@@ -29,12 +29,15 @@ $(document).ready(function () {
     var markers = [];
     var map;
 
-    for (var i = 0; i < 2; i += 1) {
+    function generateStartingPoints() {
+        for (var i = 0; i < 2; i += 1) {
 
-        var startingPoints = coordinates[Math.round(Math.random() * 3)];
-        randomPlaces.push(startingPoints);
-        //console.log(startingPoints);
-    };
+            var startingPoints = coordinates[Math.round(Math.random() * (coordinates.length - 1))];
+            coordinates.splice(coordinates.indexOf(startingPoints), 1); // index of item to be removed, 1 number of elements to remove
+                 randomPlaces.push(startingPoints);
+        }
+
+    }
 
     function initialize() {
         var mapProp = {
@@ -65,10 +68,11 @@ $(document).ready(function () {
     }
 
     google.maps.event.addDomListener(window, 'load', initialize);
+    generateStartingPoints();
     drop();
 
    // console.log(places);
-    //onsole.log(coordinates);
+    console.log(coordinates);
     console.log(randomPlaces);
 
 
