@@ -44,20 +44,45 @@
             background-position: top;
             background-size:cover;
             background-repeat: no-repeat;
+            text-align: center;
         }
         #div1 > h1 {
             color: white;
             text-shadow: 2px 2px 2px #949494;
             font-weight: bold;
             display: block;
-            text-align: center;
+
             font-size: 2em;
             font-family: Free Sans, Arial, sans-serif;
             margin-top: 15%;
-
+        }
+        #div1 .btn {
+            -webkit-border-radius: 60px;
+            -moz-border-radius: 60px;
+            border-radius: 60px;
+            text-shadow: 4px 4px 7px #666666;
+            font-family: Arial;
+            color: #ffffff;
+            font-size: 20px;
+            background: transparent;
+            padding: 20px 20px 20px 20px;
+            border: solid #ffffff 1px;
+            text-decoration: none;
 
 
         }
+
+        #div1 .btn:hover {
+            background: transparent;
+            background-image: -webkit-linear-gradient(top, transparent, #fff);
+            background-image: -moz-linear-gradient(top, transparent, #fff);
+            background-image: -ms-linear-gradient(top, transparent, #fff);
+            background-image: -o-linear-gradient(top, transparent, #fff);
+            background-image: linear-gradient(to bottom, transparent, #fff);
+            text-decoration: none;
+        }
+
+
     </style>
 </head>
 
@@ -70,7 +95,9 @@
 
 <div id="div1">
     <h1>Chcesz zwiedzić Gdańsk szybko i sprawnie? <br>Podróżuj z TravelPlanner !</h1>
-    <button type="button">zaplanuj podróż</button>
+    <br>
+    <br>
+    <button class="btn">Zaplanuj podróż</button>
 </div><br>
 
 
