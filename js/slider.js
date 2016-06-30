@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    var images = ['url(images/sail-boat1080.jpg)', 'url(images/bazylika1080.jpg)', 'url(images/brama-wyzynna1080.jpg)', 'url(images/dluga-ulica1080.jpg)', 'url(images/zuraw-gdanski-hi-res.jpg)'];
+    var images = ['url(images/sail-boat1080.jpg)', 'url(images/starowkanoc.jpg)', 'url(images/gdansknoc.jpg)', 'url(images/dluganoca.jpg)', 'url(images/zuraw-gdanski-hi-res.jpg)'];
     console.log(images);
     //  variable to store index
     var i = 0;
