@@ -234,7 +234,7 @@ nav {
 .about-us-image {
     opacity: 0;
     display: flex;
-    border-radius:10%;
+    border-radius:100%;
     width: 100%;
     margin: 0 auto;
 }
@@ -478,3 +478,4 @@ footer li {
     .col { margin: 1% 0 1% 0;}
     .span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
 }
+
