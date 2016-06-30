@@ -10,10 +10,10 @@ body {
 /* css for menu content */
 
 header {
-    padding-top: 50px;
-    height: 110px;
+    padding-top: 10px;
+    height: 70px;
     width:100%;
-    background-image: url(../images/logo.jpg);
+    /*background-image: url(../images/logo.png);*/
     background-repeat: no-repeat;
     background-size: 150px;
     background-color: rgb(255,255,255);
@@ -68,68 +68,68 @@ nav {
 }
 
 
-.trip-planner {
-    position: absolute;
-    top:2%;
-    left:1%;
-    max-width:23%;
-    height: 270px;
-    z-index:1;
-    background: rgb(248,248,248);
-    padding: 30px 30px 20px 30px;
-    font: 12px Arial, Helvetica, sans-serif;
-    color: white;
-    border-radius: 5px;
-}
+/*.trip-planner {*/
+    /*position: absolute;*/
+    /*top:2%;*/
+    /*left:1%;*/
+    /*max-width:23%;*/
+    /*height: 270px;*/
+    /*z-index:1;*/
+    /*background: rgb(248,248,248);*/
+    /*padding: 30px 30px 20px 30px;*/
+    /*font: 12px Arial, Helvetica, sans-serif;*/
+    /*color: white;*/
+    /*border-radius: 5px;*/
+/*}*/
 
-.trip-planner h1 {
-    font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
-    padding: 20px 0 20px 40px;
-    display: block;
-    margin: -30px -30px 10px -30px;
-    background: rgb(64,186,180);
-    text-shadow: 1px 1px 1px rgb(148,148,148);
-    border-radius: 5px 5px 0 0;
-    border-bottom:1px solid rgb(57,147,143);
-}
+/*.trip-planner h1 {*/
+    /*font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;*/
+    /*padding: 20px 0 20px 40px;*/
+    /*display: block;*/
+    /*margin: -30px -30px 10px -30px;*/
+    /*background: rgb(64,186,180);*/
+    /*text-shadow: 1px 1px 1px rgb(148,148,148);*/
+    /*border-radius: 5px 5px 0 0;*/
+    /*border-bottom:1px solid rgb(57,147,143);*/
+/*}*/
 
-.trip-planner label {
-    display: block;
-    margin: 0 0 5px;
-}
+/*.trip-planner label {*/
+    /*display: block;*/
+    /*margin: 0 0 5px;*/
+/*}*/
 
-.trip-planner label>span {
-    float: left;
-    margin-top: 10px;
-    margin-left: 10px;
-    color: rgb(94,94,94);
-}
+/*.trip-planner label>span {*/
+    /*float: left;*/
+    /*margin-top: 10px;*/
+    /*margin-left: 10px;*/
+    /*color: rgb(94,94,94);*/
+/*}*/
 
-.trip-planner input[type="text"] {
-    color: rgb(0,5,85);
-    height: 30px;
-    width: 100%;
-    padding: 0 0 0 10px;
-    margin-top: 2px;
-    border: 1px solid rgb(229,229,229);
-    background: rgb(251,251,251);
-    outline: 0;
-    box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
-    font: normal 14px/14px Arial, Helvetica, sans-serif;
-}
+/*.trip-planner input[type="text"] {*/
+    /*color: rgb(0,5,85);*/
+    /*height: 30px;*/
+    /*width: 100%;*/
+    /*padding: 0 0 0 10px;*/
+    /*margin-top: 2px;*/
+    /*border: 1px solid rgb(229,229,229);*/
+    /*background: rgb(251,251,251);*/
+    /*outline: 0;*/
+    /*box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);*/
+    /*font: normal 14px/14px Arial, Helvetica, sans-serif;*/
+/*}*/
 
-.trip-planner input[type="submit"] {
-    background-color: rgb(64,186,180);
-    border-radius: 5px;
-    border: none;
-    padding: 10px 25px 10px 25px;
-    color: #FFF;
-    text-shadow: 1px 1px 1px #949494;
-}
+/*.trip-planner input[type="submit"] {*/
+    /*background-color: rgb(64,186,180);*/
+    /*border-radius: 5px;*/
+    /*border: none;*/
+    /*padding: 10px 25px 10px 25px;*/
+    /*color: #FFF;*/
+    /*text-shadow: 1px 1px 1px #949494;*/
+/*}*/
 
-.trip-planner input[type="submit"]:hover {
-    background-color:rgb(69,142,139);
-}
+/*.trip-planner input[type="submit"]:hover {*/
+    /*background-color:rgb(69,142,139);*/
+/*}*/
 
 .mapa {
     position: absolute;
@@ -271,39 +271,39 @@ nav {
 }
 
 
-.fog-on-map {
-    position: absolute;
-    background-color: rgba(64,186,180,0.8);
-    width: 100%;
-    z-index: 2;
-    color: #FFFFFF;
-    text-shadow: 2px 2px 2px #949494;
-    display: flex;
-    transition: background-color 1s, color 1s, text-shadow 0.5s, visibility 1s;
-    justify-content: center;
-    align-items: center;
-}
+/*.fog-on-map {*/
+    /*position: absolute;*/
+    /*background-color: rgba(64,186,180,0.8);*/
+    /*width: 100%;*/
+    /*z-index: 2;*/
+    /*color: #FFFFFF;*/
+    /*text-shadow: 2px 2px 2px #949494;*/
+    /*display: flex;*/
+    /*transition: background-color 1s, color 1s, text-shadow 0.5s, visibility 1s;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+/*}*/
 
-.fog-on-map > h1 {
-    font-size: 50px;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    line-height: 100px;
-}
+/*.fog-on-map > h1 {*/
+    /*font-size: 50px;*/
+    /*font-family: Arial, sans-serif;*/
+    /*text-align: center;*/
+    /*line-height: 100px;*/
+/*}*/
 
-@media screen and (max-width: 626px) {
-    .fog-on-map  h1 {
-        font-size: 30px;
-        padding-top: 50px;
-    }
-}
+/*@media screen and (max-width: 626px) {*/
+    /*.fog-on-map  h1 {*/
+        /*font-size: 30px;*/
+        /*padding-top: 50px;*/
+    /*}*/
+/*}*/
 
-.container-map:hover .fog-on-map {
-    background-color: transparent;
-    color: transparent;
-    text-shadow: none;
-    visibility: hidden;
-}
+/*.container-map:hover .fog-on-map {*/
+    /*background-color: transparent;*/
+    /*color: transparent;*/
+    /*text-shadow: none;*/
+    /*visibility: hidden;*/
+/*}*/
 
 
 form, input, select, textarea {
@@ -478,4 +478,68 @@ footer li {
     .col { margin: 1% 0 1% 0;}
     .span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
 }
+
+/*!*startpage**/
+
+#div1 {
+    position:absolute;
+    top:0;
+    right:0;
+    width:100%;
+    height:100vh;
+    background-color: rgb(64,186,180);
+    background-image: url("../images/background.jpg");
+    background-position: top;
+    background-size:cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    z-index: 6;
+}
+#div1 > h1 {
+    color: white;
+    text-shadow: 2px 2px 2px #949494;
+    font-weight: bold;
+    display: block;
+
+    font-size: 2em;
+    font-family: Free Sans, Arial, sans-serif;
+    margin-top: 15%;
+}
+#div1 .btn {
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    text-shadow: 4px 4px 7px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: transparent;
+    padding: 20px 20px 20px 20px;
+    border: solid #ffffff 1px;
+    text-decoration: none;
+    width:auto;
+    height: auto;
+
+
+}
+
+#div1 .btn:hover {
+    background: transparent;
+    background-image: -webkit-linear-gradient(top, transparent, #fff);
+    background-image: -moz-linear-gradient(top, transparent, #fff);
+    background-image: -ms-linear-gradient(top, transparent, #fff);
+    background-image: -o-linear-gradient(top, transparent, #fff);
+    background-image: linear-gradient(to bottom, transparent, #fff);
+    text-decoration: none;
+}
+
+#div1 #img {
+    position: absolute;
+    top: 15px;
+    left: 8px;
+}
+.hide {
+    display: none;
+}
+
 
