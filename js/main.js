@@ -109,14 +109,14 @@ $(document).ready(function() {
 
     $("#btn1").click(function(){
 
-        $("#div1").animate({top: '-100%', left: '25%', opacity: '0', width: '50%'},{ duration: 2000, queue: false });
+        $("#div1").animate({top: '-100%', left: '25%', opacity: '0', width: '50%'},{ duration: 1000, queue: false });
 
 
     });
 
     $("#btn2").click(function(){
 
-        $("#div1").animate({top: '0px', left: '0', opacity: '1', width: '100%'},{ duration: 2000, queue: false });
+        $("#div1").animate({top: '0px', left: '0', opacity: '1', width: '100%'},{ duration: 1000, queue: false });
 
 
     });
