@@ -16,13 +16,13 @@ header {
     /*background-image: url(../images/logo.png);*/
     background-repeat: no-repeat;
     background-size: 150px;
-    background-color: rgb(255,255,255);
+    background-color: rgb(64,186,180);
     background-position: center;
     background-position-y: 40px;
 }
 
 nav {
-    background-color: rgb(64,186,180);
+    background-color:rgb(64,186,180);
     padding: 1px;
     margin-bottom: 1%;
     position: fixed;
@@ -240,11 +240,11 @@ nav {
 }
 
 .about-us-text {
-    background-color:rgb(64,186,180);
-    color: #FFFFFF;
-    text-shadow: 2px 2px 2px #949494;
+    /*background-color:rgb(64,186,180);*/
+    color: rgb(64,186,180);
+    /*text-shadow: 2px 2px 2px #949494;*/
     border-radius:5px;
-    width:75%;
+    width:65%;
     margin: 10px auto;
     padding:10px;
     min-height: 400px;
@@ -260,7 +260,7 @@ nav {
 }
 
 .about-us-text p {
-    text-align: justify;
+    text-align:initial;
 }
 
 
@@ -317,7 +317,7 @@ form, input, select, textarea {
     padding-top: 20px;
     margin-top: 40px;
     height: 150px;
-    background:rgba(64,186,180,1);
+    background:rgb(64,186,180);
 }
 
 
@@ -362,7 +362,7 @@ form, input, select, textarea {
 #submit {
     width: 40%;
     height: 32px;
-    background: #e8bf2a;
+    background:#e8bf2a;
     font-family: inherit;
     font-weight: bold;
     color: inherit;
