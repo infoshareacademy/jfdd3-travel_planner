@@ -378,17 +378,34 @@ function playSound(path) {
 
 
 /* game starts here */
+
+
+
+
 $('#submit').on('click', function(event) {
+    var booking_email = $('#email-footer').val();
     event.preventDefault();
-    $('#premiere').animate({height: 1200}, 1000);
-    $('#gamecontainer').css({'display': 'flex'});
-    createBoard();
-    $('.playButton').on('click', 'button', function () {
-        $(this).text('Rozpocznij przejazd !');
-        $menu.css({'visibility': 'visible'});
-        createMenu();
-        createPlaces();
-        onEscKey();
-        onClicks();
-    });
+    console.info('click on submit');
+    console.log(booking_email);
+    console.log(/(.+)@(.+){2,}\.(.+){2,}/.test(booking_email));
+
+    if( /(.+)@(.+){2,}\.(.+){2,}/.test(booking_email) ){
+        console.info('validation');
+        // valid email
+        $('#premiere').animate({height: 1200}, 1000);
+        $('#gamecontainer').css({'display': 'flex'});
+        createBoard();
+        $('.playButton').on('click', 'button', function () {
+            $(this).text('Rozpocznij przejazd !');
+            $menu.css({'visibility': 'visible'});
+            createMenu();
+            createPlaces();
+            onEscKey();
+            onClicks();
+        });
+    } else {
+        console.error('You must provide correct email address.');
+        $('#email-footer').val('WPROWADZ POPRAWNY ADRESS EMAIL');
+    }
+
 });

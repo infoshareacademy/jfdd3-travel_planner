@@ -80,7 +80,6 @@ $(document).ready(function() {
     });
 
 
-    // TODO opis wymagany
     function onScroll(){
         var scrollPos = $(window).scrollTop();
 
